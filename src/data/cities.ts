@@ -1377,5 +1377,32 @@ export const cities: City[] = [
     requirements: "Veicolo esclusivamente elettrico (BEV)",
     notes:
       "Si consiglia di contattare la Polizia Municipale per eventuale registrazione della targa o chiarimenti sui limiti temporali della sosta.",
+  },{
+    id: "spoleto",
+    name: "Spoleto",
+    region: "Umbria",
+    description:
+      "Accesso alla ZTL consentito solo per residenti del centro storico o per attività lavorative, previa richiesta cartacea; nessuna agevolazione prevista per la sosta su strisce blu",
+    request_url: "https://www.comune.spoleto.pg.it/wp-content/uploads/2022/02/2021_ModART24_PermessoZTL-VeicoloElettrico.pdf", 
+    needs_display: true,
+    free_parking: false,
+    coordinates: [12.7438, 42.7352],
+    duration: "1 anno (con rinnovo annuale)",
+    office_address:
+      "Comune di Spoleto – Ufficio Permessi Mobilità, Via Cerquiglia 3, 06049 Spoleto (PG)",
+    office_hours: "Lunedì–Venerdì 8:30–13:00; Martedì e Giovedì anche 15:00–17:00",
+    phone: "+39 0743 2181",
+    email: "ztl@comune.spoleto.pg.it",
+    parking_zones_description:
+      "Non sono previste esenzioni o agevolazioni per la sosta su strisce blu, neppure per veicoli elettrici",
+    ztl_access_description:
+      "L’accesso alla ZTL è consentito esclusivamente ai residenti del centro storico o a chi ha attività lavorative all'interno, previa richiesta cartacea e pagamento",
+    cost: "42€ per il primo rilascio, 10€/anno per i rinnovi",
+    payment_method: "Pagamento presso sportello o tramite bonifico secondo istruzioni comunali",
+    required_documents:
+      "Carta di circolazione, documento d’identità, modulo cartaceo compilato e motivazione (residenza o attività)",
+    requirements: "Residenza o attività lavorativa nel centro storico",
+    notes:
+      "Non sono previste agevolazioni per i veicoli elettrici se non rientranti nei criteri sopra indicati. Il pass va richiesto a mano presso l’ufficio mobilità.",
   }
 ];
