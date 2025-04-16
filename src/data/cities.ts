@@ -1020,7 +1020,7 @@ export const cities: City[] = [
     free_parking: true,
     coordinates: [12.0407, 44.2227],
     duration: "Illimitata",
-    office_address: "Ufficio Mobilità Integrata, Piazza Saffi 8, 47121 Forlì",
+    office_address: "Via Lombardini 2, 47121 Forlì FC",
     office_hours:
       "Lunedì–Venerdì 8:30–13:00; Martedì e Giovedì anche 15:00–17:00",
     phone: "+39 0543 712111",
