@@ -1,4 +1,4 @@
-# ZTL Elettrica Italia Map
+# ZTL Elettrica
 
 ![Preview](public/assets/preview.png)
 
