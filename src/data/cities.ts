@@ -64,7 +64,7 @@ export const cities: City[] = [
     coordinates: [9.19, 45.4642],
     duration: "5 anni (per la sosta); accesso Area C automatico",
     office_address: "ATM Point Duomo, Piazza Duomo 19A, 20121 Milano",
-    office_hours: "Lunedì–Sabato 8:15–19:00",
+    office_hours: "Lunedì-Sabato 8:15-19:00",
     phone: "+39 02 48684001 (tasto 1 poi 3)",
     email: "MTA.UfficioAreaC@comune.milano.it",
     parking_zones_description:
@@ -77,7 +77,7 @@ export const cities: City[] = [
       "Carta di circolazione del veicolo, documento d'identità, marca da bollo da 16€ (solo per sosta)",
     requirements: "Veicolo con alimentazione esclusivamente elettrica (BEV)",
     notes:
-      "Per l’Area C non è necessaria alcuna registrazione preventiva: il sistema rileva automaticamente le targhe dei veicoli elettrici. Il pass per la sosta gratuita va richiesto separatamente.",
+      "Per l'Area C non è necessaria alcuna registrazione preventiva: il sistema rileva automaticamente le targhe dei veicoli elettrici. Il pass per la sosta gratuita va richiesto separatamente.",
   },
   {
     id: "firenze",
@@ -147,7 +147,7 @@ export const cities: City[] = [
     duration: "Permanente per veicoli elettrici",
     office_address: "GTT - Corso Turati 19/6, 10128 Torino",
     office_hours:
-      "Lunedì–Venerdì 8:30–12:30; Martedì e Giovedì anche 14:00–17:00",
+      "Lunedì-Venerdì 8:30-12:30; Martedì e Giovedì anche 14:00-17:00",
     phone: "+39 011 5764733",
     email: "permessiztl@gtt.to.it",
     parking_zones_description:
@@ -175,17 +175,17 @@ export const cities: City[] = [
     duration: "2 anni",
     office_address: "ANM - Via G. Marino 1, 80125 Napoli",
     office_hours:
-      "Lunedì, Mercoledì, Venerdì 9:00–13:00; Martedì e Giovedì 9:00–13:00 e 14:00–16:00",
+      "Lunedì, Mercoledì, Venerdì 9:00-13:00; Martedì e Giovedì 9:00-13:00 e 14:00-16:00",
     phone: "+39 081 7632182",
     email: "permessiztl@anm.it",
     parking_zones_description:
       "I veicoli elettrici possono parcheggiare gratuitamente sulle strisce blu, esclusi i parcheggi a rotazione, in struttura e car-valet",
     ztl_access_description:
-      "L’accesso alla ZTL è consentito solo previa autorizzazione con rilascio del contrassegno elettronico",
+      "L'accesso alla ZTL è consentito solo previa autorizzazione con rilascio del contrassegno elettronico",
     cost: "€10 per diritti di segreteria (rilascio permesso)",
     payment_method: "Pagamento tramite bonifico o presso lo sportello ANM",
     required_documents:
-      "Carta di circolazione, documento d’identità, codice fiscale, modulo di richiesta",
+      "Carta di circolazione, documento d'identità, codice fiscale, modulo di richiesta",
     requirements: "Veicolo alimentato esclusivamente a energia elettrica (BEV)",
     notes:
       "Il contrassegno è elettronico e non deve essere esposto. Il permesso è valido per due anni. La targa deve essere correttamente registrata per evitare sanzioni.",
@@ -334,20 +334,20 @@ export const cities: City[] = [
     needs_display: true,
     free_parking: false,
     coordinates: [10.4018, 43.7228],
-    duration: "Annuale, con scadenza il 31 dicembre dell’anno di riferimento",
+    duration: "Annuale, con scadenza il 31 dicembre dell'anno di riferimento",
     office_address: "Pisamo, Via Cesare Battisti 53, 56125 Pisa",
     office_hours:
-      "Lunedì–Venerdì 8:30–12:30; Martedì e Giovedì anche 15:00–17:00",
+      "Lunedì-Venerdì 8:30-12:30; Martedì e Giovedì anche 15:00-17:00",
     phone: "+39 050 26111",
     email: "info@pisamo.it",
     parking_zones_description:
-      "I parcheggi su strisce blu sono sempre a pagamento. È prevista la gratuità solo nelle strisce bianche, se presenti, all’interno della ZTL",
+      "I parcheggi su strisce blu sono sempre a pagamento. È prevista la gratuità solo nelle strisce bianche, se presenti, all'interno della ZTL",
     ztl_access_description:
       "Accesso consentito con contrassegno. I residenti del centro hanno accesso gratuito alla propria zona (Nord o Sud). Per entrambe le zone è previsto un costo aggiuntivo. I non residenti possono acquistare autorizzazioni annuali",
     cost: "Residenti ZTL: gratuito per una zona, circa €50/anno per entrambe. Non residenti: circa €50/anno per una zona, €100/anno per entrambe",
     payment_method: "Pagamento presso Pisamo o tramite portale, se abilitato",
     required_documents:
-      "Carta di circolazione, documento d’identità, codice fiscale, modulo di richiesta",
+      "Carta di circolazione, documento d'identità, codice fiscale, modulo di richiesta",
     requirements: "Veicolo con alimentazione esclusivamente elettrica (BEV)",
     notes:
       "Il permesso deve essere esposto visibilmente. La ZTL è suddivisa in due zone: Nord e Sud. La sosta gratuita non è prevista sulle strisce blu.",
@@ -421,7 +421,7 @@ export const cities: City[] = [
     duration: "1 anno, con rinnovo automatico",
     office_address: "Via Mamiani 76, 60125 - Ancona",
     office_hours:
-      "Lunedì – Venerdì: 8:00–14:00 | Martedì e Giovedì anche 14:30–16:00",
+      "Lunedì - Venerdì: 8:00-14:00 | Martedì e Giovedì anche 14:30-16:00",
     phone: "0712814869",
     email: "permessi@anconaparcheggi.it",
     parking_zones_description: "Tutte le zone blu",
@@ -474,11 +474,11 @@ export const cities: City[] = [
     required_documents: "Libretto di circolazione del veicolo",
     requirements: "Nessuno",
     notes:
-      "corso Vittorio Emanuele II all’incrocio con via Municipio; \n" +
-      "corso Vittorio Emanuele II all’incrocio con via Nazareth; \n" +
-      "corso Garibaldi all’incrocio con via Cavour; \n" +
-      "via Cavour all’incrocio con vico Cambio; \n" +
-      "via Cavour all’incrocio con via Carlo V d’Asburgo (ingresso Castello); \n" +
+      "corso Vittorio Emanuele II all'incrocio con via Municipio; \n" +
+      "corso Vittorio Emanuele II all'incrocio con via Nazareth; \n" +
+      "corso Garibaldi all'incrocio con via Cavour; \n" +
+      "via Cavour all'incrocio con vico Cambio; \n" +
+      "via Cavour all'incrocio con via Carlo V d'Asburgo (ingresso Castello); \n" +
       "piazza Marina (direzione Centro Storico, Caserma Provinciale Guardia di Finanza); \n" +
       "piazza Marina (direzione Castello).",
   },
@@ -497,7 +497,7 @@ export const cities: City[] = [
     office_address:
       "Polizia Municipale di Senigallia, Via Cimabue 3, 60019 Senigallia (AN)",
     office_hours:
-      "Lunedì–Venerdì 8:30–13:00; Martedì e Giovedì anche 15:00–17:00",
+      "Lunedì-Venerdì 8:30-13:00; Martedì e Giovedì anche 15:00-17:00",
     phone: "+39 071 6629288",
     email: "polizia.municipale@comune.senigallia.an.it",
     parking_zones_description:
@@ -527,7 +527,7 @@ export const cities: City[] = [
     office_address:
       "Comando Polizia Municipale, Via Cairoli 24, 06034 Foligno (PG)",
     office_hours:
-      "Lunedì–Venerdì 8:30–13:00; Martedì e Giovedì anche 15:30–17:30",
+      "Lunedì-Venerdì 8:30-13:00; Martedì e Giovedì anche 15:30-17:30",
     phone: "+39 0742 330665",
     email: "poliziamun@comune.foligno.pg.it",
     parking_zones_description:
@@ -553,11 +553,11 @@ export const cities: City[] = [
     needs_display: false,
     free_parking: false,
     coordinates: [12.8608, 42.4048],
-    duration: "Da definire in base all’autorizzazione rilasciata",
+    duration: "Da definire in base all'autorizzazione rilasciata",
     office_address:
       "Comando Polizia Locale, Via della Repubblica 3, 02100 Rieti",
     office_hours:
-      "Lunedì–Venerdì 8:30–13:00; Martedì e Giovedì anche 15:00–17:00",
+      "Lunedì-Venerdì 8:30-13:00; Martedì e Giovedì anche 15:00-17:00",
     phone: "+39 0746 2871",
     email: "permessi@comune.rieti.it",
     parking_zones_description:
@@ -570,7 +570,7 @@ export const cities: City[] = [
       "Carta di circolazione del veicolo da inviare via email",
     requirements: "Veicolo elettrico o ibrido",
     notes:
-      "La richiesta deve essere inviata all’indirizzo email indicato allegando il libretto; il permesso verrà rilasciato in forma digitale o cartacea.",
+      "La richiesta deve essere inviata all'indirizzo email indicato allegando il libretto; il permesso verrà rilasciato in forma digitale o cartacea.",
   },
   {
     id: "asti",
@@ -586,7 +586,7 @@ export const cities: City[] = [
     duration: "1 anno",
     office_address: "ASP Asti, Corso Don Minzoni 86, 14100 Asti",
     office_hours:
-      "Lunedì–Venerdì 8:30–12:30; Martedì e Giovedì anche 14:30–16:30",
+      "Lunedì-Venerdì 8:30-12:30; Martedì e Giovedì anche 14:30-16:30",
     phone: "+39 0141 434611",
     email: "info@asp.asti.it",
     parking_zones_description:
@@ -598,7 +598,7 @@ export const cities: City[] = [
       "Numero di targa e immagine del libretto (carta di circolazione)",
     requirements: "Veicolo esclusivamente elettrico (BEV)",
     notes:
-      "Selezionare l’abbonamento 'Gratuito Campo Palio – veicoli elettrici' nell’app AstiParcheggi. Il sistema consente il controllo automatico da parte degli accertatori ASP.",
+      "Selezionare l'abbonamento 'Gratuito Campo Palio - veicoli elettrici' nell'app AstiParcheggi. Il sistema consente il controllo automatico da parte degli accertatori ASP.",
   },
   {
     id: "cervia",
@@ -613,9 +613,9 @@ export const cities: City[] = [
     coordinates: [12.3501, 44.2595],
     duration: "1 anno, rinnovabile",
     office_address:
-      "Comune di Cervia – Ufficio Mobilità, Piazza Garibaldi 1, 48015 Cervia (RA)",
+      "Comune di Cervia - Ufficio Mobilità, Piazza Garibaldi 1, 48015 Cervia (RA)",
     office_hours:
-      "Lunedì–Venerdì 8:30–12:30; Martedì e Giovedì anche 15:00–17:00",
+      "Lunedì-Venerdì 8:30-12:30; Martedì e Giovedì anche 15:00-17:00",
     phone: "+39 0544 979111",
     email: "urp@comunecervia.it",
     parking_zones_description:
@@ -624,10 +624,10 @@ export const cities: City[] = [
     cost: "Gratuito",
     payment_method: "Non necessario",
     required_documents:
-      "Carta di circolazione del veicolo, documento d’identità, modulo di richiesta",
+      "Carta di circolazione del veicolo, documento d'identità, modulo di richiesta",
     requirements: "Veicolo esclusivamente elettrico (BEV)",
     notes:
-      "È necessario richiedere l’autorizzazione preventiva al Comune per usufruire dell’agevolazione.",
+      "È necessario richiedere l'autorizzazione preventiva al Comune per usufruire dell'agevolazione.",
   },
   {
     id: "ferrara",
@@ -641,15 +641,15 @@ export const cities: City[] = [
     coordinates: [11.619, 44.835],
     duration: "3 anni",
     office_address:
-      "Ferrara TUA – Servizio Mobilità, Via Bologna 9, 44122 Ferrara",
+      "Ferrara TUA - Servizio Mobilità, Via Bologna 9, 44122 Ferrara",
     office_hours:
-      "Lunedì–Venerdì 8:30–13:00; Martedì e Giovedì anche 14:30–17:00",
+      "Lunedì-Venerdì 8:30-13:00; Martedì e Giovedì anche 14:30-17:00",
     phone: "+39 0532 230311",
     email: "info@ferraratua.it",
     parking_zones_description:
       "I veicoli elettrici possono sostare gratuitamente nei parcheggi a pagamento su strisce blu con pass 'Mi muovo elettrico'",
     ztl_access_description:
-      "Non è consentito l’accesso alla ZTL anche con veicoli elettrici",
+      "Non è consentito l'accesso alla ZTL anche con veicoli elettrici",
     cost: "Gratuito",
     payment_method: "Non necessario",
     required_documents:
@@ -673,7 +673,7 @@ export const cities: City[] = [
     office_address:
       "AVM S.p.A., Isola Nova del Tronchetto 33, 30135 Venezia (VE)",
     office_hours:
-      "Lunedì–Venerdì 8:30–13:00; Martedì e Giovedì anche 14:30–16:30",
+      "Lunedì-Venerdì 8:30-13:00; Martedì e Giovedì anche 14:30-16:30",
     phone: "+39 041 2722111",
     email: "avm@avmspa.it",
     parking_zones_description:
@@ -701,9 +701,9 @@ export const cities: City[] = [
     coordinates: [10.2118, 45.5416],
     duration: "Illimitata (finché sussistono i requisiti)",
     office_address:
-      "Comune di Brescia – Settore Mobilità, Via Marconi 12, 25126 Brescia",
+      "Comune di Brescia - Settore Mobilità, Via Marconi 12, 25126 Brescia",
     office_hours:
-      "Lunedì–Venerdì 8:30–12:30; Martedì e Giovedì anche 14:00–16:00",
+      "Lunedì-Venerdì 8:30-12:30; Martedì e Giovedì anche 14:00-16:00",
     phone: "+39 030 2978611",
     email: "permessi@comune.brescia.it",
     parking_zones_description:
@@ -713,7 +713,7 @@ export const cities: City[] = [
     cost: "Necessarie due marche da bollo da 16€",
     payment_method: "Marca da bollo cartacea da allegare alla richiesta sosta",
     required_documents:
-      "Carta di circolazione, modulo richiesta, documento d’identità",
+      "Carta di circolazione, modulo richiesta, documento d'identità",
     requirements: "Veicolo esclusivamente elettrico (BEV)",
     notes:
       "Il contrassegno è digitale e valido finché sussistono le condizioni per il rilascio. Le zone pedonali e a pedonalità privilegiata restano interdette.",
@@ -733,7 +733,7 @@ export const cities: City[] = [
     office_address:
       "Pescara Multiservice S.p.A., Via Cesare Battisti 122, 65122 Pescara",
     office_hours:
-      "Lunedì–Venerdì 9:00–12:00; Martedì e Giovedì anche 15:00–17:00",
+      "Lunedì-Venerdì 9:00-12:00; Martedì e Giovedì anche 15:00-17:00",
     phone: "+39 085 2058944",
     email: "info@pescaramultiservice.it",
     parking_zones_description:
@@ -746,7 +746,7 @@ export const cities: City[] = [
       "Carta di circolazione del veicolo da inviare via email",
     requirements: "Veicolo 100% elettrico (BEV)",
     notes:
-      "Per usufruire dell’esenzione è necessario inviare una mail con copia del libretto a Pescara Multiservice; l’autorizzazione viene registrata nei sistemi di controllo.",
+      "Per usufruire dell'esenzione è necessario inviare una mail con copia del libretto a Pescara Multiservice; l'autorizzazione viene registrata nei sistemi di controllo.",
   },
   {
     id: "perugia",
@@ -789,19 +789,19 @@ export const cities: City[] = [
     coordinates: [10.9177, 43.9305],
     duration: "Temporaneo, da verificare nel modulo online",
     office_address:
-      "Comune di Pistoia – Ufficio Mobilità, Piazza del Duomo 1, 51100 Pistoia",
+      "Comune di Pistoia - Ufficio Mobilità, Piazza del Duomo 1, 51100 Pistoia",
     office_hours:
-      "Lunedì–Venerdì 8:30–13:00; Martedì e Giovedì anche 15:00–17:00",
+      "Lunedì-Venerdì 8:30-13:00; Martedì e Giovedì anche 15:00-17:00",
     phone: "+39 0573 3711",
     email: "mobilita@comune.pistoia.it",
     parking_zones_description:
       "Non sono previste agevolazioni per la sosta su strisce blu",
     ztl_access_description:
-      "Non è consentito l’accesso alla ZTL senza rilascio di un permesso temporaneo",
+      "Non è consentito l'accesso alla ZTL senza rilascio di un permesso temporaneo",
     cost: "Da verificare sul portale in base alla richiesta",
     payment_method: "Online tramite sportello telematico",
     required_documents:
-      "Carta di circolazione, documento d’identità, modulo telematico",
+      "Carta di circolazione, documento d'identità, modulo telematico",
     requirements: "Veicolo esclusivamente elettrico (BEV)",
     notes:
       "La richiesta va presentata tramite lo sportello telematico comunale. Non sono previste agevolazioni sulla sosta.",
@@ -819,8 +819,8 @@ export const cities: City[] = [
     coordinates: [9.6949, 45.0522],
     duration: "5 anni",
     office_address:
-      "Comune di Piacenza – Ufficio Permessi Mobilità, Via Beverora 57, 29121 Piacenza",
-    office_hours: "Lunedì–Venerdì 8:30–13:00; Giovedì anche 15:00–17:00",
+      "Comune di Piacenza - Ufficio Permessi Mobilità, Via Beverora 57, 29121 Piacenza",
+    office_hours: "Lunedì-Venerdì 8:30-13:00; Giovedì anche 15:00-17:00",
     phone: "+39 0523 492111",
     email: "ztl@comune.piacenza.it",
     parking_zones_description:
@@ -831,7 +831,7 @@ export const cities: City[] = [
     payment_method:
       "Richiesta online tramite portale BRAV o presso lo sportello comunale",
     required_documents:
-      "Carta di circolazione, documento d’identità, modulo di richiesta",
+      "Carta di circolazione, documento d'identità, modulo di richiesta",
     requirements: "Veicolo esclusivamente elettrico (BEV)",
     notes:
       "Il pass ha durata quinquennale e consente sia l'accesso ZTL (settore A) che la sosta gratuita. È necessario esporre il pass e registrarsi tramite il portale BRAV.",
@@ -877,7 +877,7 @@ export const cities: City[] = [
     office_address:
       "Sportello Permessi ZTL/ZSC, Comune di Livorno, Piazza del Municipio 1, 57123 Livorno",
     office_hours:
-      "Lunedì–Venerdì 8:30–13:00; Martedì e Giovedì anche 15:00–17:00",
+      "Lunedì-Venerdì 8:30-13:00; Martedì e Giovedì anche 15:00-17:00",
     phone: "+39 0586 820111",
     email: "permessi.livorno@esteemsrl.it",
     parking_zones_description:
@@ -887,7 +887,7 @@ export const cities: City[] = [
     cost: "Gratuito",
     payment_method: "Online tramite portale del Comune",
     required_documents:
-      "Carta di circolazione, documento d’identità, modulo online",
+      "Carta di circolazione, documento d'identità, modulo online",
     requirements: "Veicolo esclusivamente elettrico (BEV)",
     notes:
       "Il permesso deve essere richiesto tramite il portale ufficiale del Comune. Vale sia per accesso ZTL sia per sosta ZSC.",
@@ -904,9 +904,9 @@ export const cities: City[] = [
     coordinates: [10.0213, 45.1333],
     duration: "Annuale (verificare condizioni sul sito AEM)",
     office_address:
-      "AEM Cremona S.p.A. – Ufficio Permessi ZTL, Via Postumia 23, 26100 Cremona",
+      "AEM Cremona S.p.A. - Ufficio Permessi ZTL, Via Postumia 23, 26100 Cremona",
     office_hours:
-      "Lunedì–Venerdì 8:30–12:30; Martedì e Giovedì anche 14:30–16:30",
+      "Lunedì-Venerdì 8:30-12:30; Martedì e Giovedì anche 14:30-16:30",
     phone: "+39 0372 433511",
     email: "ufficio.permessi@aemcremona.it",
     parking_zones_description:
@@ -916,7 +916,7 @@ export const cities: City[] = [
     cost: "Gratuito",
     payment_method: "Non necessario",
     required_documents:
-      "Carta di circolazione, documento d’identità, modulo richiesta AEM",
+      "Carta di circolazione, documento d'identità, modulo richiesta AEM",
     requirements: "Veicolo esclusivamente elettrico (BEV)",
     notes:
       "È necessario richiedere il permesso presso AEM per accedere unicamente ai varchi abilitati. Il permesso non consente la sosta gratuita.",
@@ -936,13 +936,13 @@ export const cities: City[] = [
     office_address:
       "Kyma Mobilità S.p.A., Viale Magna Grecia 418, 74121 Taranto",
     office_hours:
-      "Lunedì–Venerdì 8:30–13:00; Martedì e Giovedì anche 15:00–17:00",
+      "Lunedì-Venerdì 8:30-13:00; Martedì e Giovedì anche 15:00-17:00",
     phone: "+39 099 7786811",
     email: "kymamobilita@kymamobilita.it",
     parking_zones_description:
       "Sosta gratuita per auto elettriche su tutti gli stalli blu regolamentati da Kyma Mobilità",
     ztl_access_description:
-      "Non sono previste agevolazioni per l’accesso alla ZTL",
+      "Non sono previste agevolazioni per l'accesso alla ZTL",
     cost: "Gratuito",
     payment_method: "Registrazione gratuita sul portale Kyma Mobilità",
     required_documents: "Carta di circolazione, targa, modulo online",
@@ -963,9 +963,9 @@ export const cities: City[] = [
     coordinates: [9.1217, 39.2238],
     duration: "1 anno (rinnovabile)",
     office_address:
-      "Comune di Cagliari – Servizio Mobilità, Via Sonnino 111, 09127 Cagliari",
+      "Comune di Cagliari - Servizio Mobilità, Via Sonnino 111, 09127 Cagliari",
     office_hours:
-      "Lunedì–Venerdì 9:00–13:00; Martedì e Giovedì anche 15:00–17:00",
+      "Lunedì-Venerdì 9:00-13:00; Martedì e Giovedì anche 15:00-17:00",
     phone: "+39 070 6771",
     email: "ufficioztl@comune.cagliari.it",
     parking_zones_description:
@@ -975,7 +975,7 @@ export const cities: City[] = [
     cost: "Gratuito",
     payment_method: "Richiesta online tramite SPID",
     required_documents:
-      "Carta di circolazione, documento d’identità, codice fiscale (da caricare digitalmente durante la richiesta)",
+      "Carta di circolazione, documento d'identità, codice fiscale (da caricare digitalmente durante la richiesta)",
     requirements: "Veicolo esclusivamente elettrico (BEV)",
     notes:
       "Il pass ha validità annuale e deve essere richiesto tramite SPID. Il contrassegno è digitale e include accesso ZTL e sosta gratuita (con limitazioni).",
@@ -994,7 +994,7 @@ export const cities: City[] = [
     duration: "1 anno",
     office_address: "MobPark S.r.l., Via Fontevivo 21, 19125 La Spezia",
     office_hours:
-      "Lunedì–Venerdì 8:30–13:00; Martedì e Giovedì anche 15:00–17:00",
+      "Lunedì-Venerdì 8:30-13:00; Martedì e Giovedì anche 15:00-17:00",
     phone: "+39 0187 518225",
     email: "infomobpark@mobpark.it",
     parking_zones_description:
@@ -1004,7 +1004,7 @@ export const cities: City[] = [
     cost: "Gratuito",
     payment_method: "Richiesta online tramite portale MobPark",
     required_documents:
-      "Carta di circolazione, documento d’identità, modulo compilato",
+      "Carta di circolazione, documento d'identità, modulo compilato",
     requirements: "Veicolo 100% elettrico (BEV)",
     notes:
       "È necessario presentare domanda tramite il portale MobPark. La registrazione è valida per accedere alla ZTL e sostare gratuitamente su strisce blu.",
@@ -1014,7 +1014,7 @@ export const cities: City[] = [
     name: "Forlì",
     region: "Emilia-Romagna",
     description:
-      "Accesso alla ZTL e sosta gratuita su strisce blu per veicoli elettrici, previa autorizzazione presso l’Ufficio Mobilità Integrata",
+      "Accesso alla ZTL e sosta gratuita su strisce blu per veicoli elettrici, previa autorizzazione presso l'Ufficio Mobilità Integrata",
     request_url: "http://mercurio.comune.forli.fc.it/comunicazione-targhe/",
     needs_display: true,
     free_parking: true,
@@ -1022,7 +1022,7 @@ export const cities: City[] = [
     duration: "Illimitata",
     office_address: "Via Lombardini 2, 47121 Forlì FC",
     office_hours:
-      "Lunedì–Venerdì 8:30–13:00; Martedì e Giovedì anche 15:00–17:00",
+      "Lunedì-Venerdì 8:30-13:00; Martedì e Giovedì anche 15:00-17:00",
     phone: "+39 0543 712111",
     email: "mobilita.integrata@comune.forli.fc.it",
     parking_zones_description:
@@ -1032,10 +1032,10 @@ export const cities: City[] = [
     cost: "5€ una tantum",
     payment_method: "Pagamento presso Ufficio Mobilità Integrata",
     required_documents:
-      "Carta di circolazione, documento d’identità, modulo richiesta",
+      "Carta di circolazione, documento d'identità, modulo richiesta",
     requirements: "Veicolo esclusivamente elettrico (BEV)",
     notes:
-      "L’autorizzazione ha validità permanente. È necessario recarsi all’Ufficio Mobilità Integrata per il rilascio del permesso e pagare un contributo una tantum di 5€.",
+      "L'autorizzazione ha validità permanente. È necessario recarsi all'Ufficio Mobilità Integrata per il rilascio del permesso e pagare un contributo una tantum di 5€.",
   },
   {
     id: "nicosia",
@@ -1051,7 +1051,7 @@ export const cities: City[] = [
     office_address:
       "Comando della Polizia Municipale di Nicosia (EN)  Via di Falco Bernardo, 49.",
     office_hours:
-      "Lunedì–Venerdì dalle 9:00 alle 13:00, Sabato e domenica chiuso. ",
+      "Lunedì-Venerdì dalle 9:00 alle 13:00, Sabato e domenica chiuso. ",
     phone: "+39 0935 638880",
     email: "poliziamunicipale@comune.nicosia.en.it",
     parking_zones_description:
@@ -1060,7 +1060,7 @@ export const cities: City[] = [
     cost: "Gratuito",
     payment_method: "Non necessario",
     required_documents:
-      "Carta di circolazione, documento d’identità, modulo richiesta pass",
+      "Carta di circolazione, documento d'identità, modulo richiesta pass",
     requirements: "Veicolo elettrico al 100% (BEV) o Plug-in",
     notes:
       "Il pass va richiesto presso la Polizia Municipale e consente la sosta gratuita nelle aree regolamentate a pagamento. Nessun costo previsto.",
@@ -1078,9 +1078,9 @@ export const cities: City[] = [
     coordinates: [9.2725, 45.5845],
     duration: "1 anno, rinnovabile",
     office_address:
-      "Comune di Monza – Ufficio Mobilità, Piazza Trento e Trieste 1, 20900 Monza",
+      "Comune di Monza - Ufficio Mobilità, Piazza Trento e Trieste 1, 20900 Monza",
     office_hours:
-      "Lunedì–Venerdì 8:30–12:30; Martedì e Giovedì anche 14:30–16:30",
+      "Lunedì-Venerdì 8:30-12:30; Martedì e Giovedì anche 14:30-16:30",
     phone: "+39 039 23721",
     email: "mobilita@comune.monza.it",
     parking_zones_description:
@@ -1089,7 +1089,7 @@ export const cities: City[] = [
     cost: "Gratuito",
     payment_method: "Non necessario",
     required_documents:
-      "Carta di circolazione, documento d’identità, targa da associare tramite portale",
+      "Carta di circolazione, documento d'identità, targa da associare tramite portale",
     requirements: "Veicolo esclusivamente elettrico (BEV)",
     notes:
       "La procedura per la richiesta dell'autorizzazione alla sosta gratuita avviene interamente online tramite il portale del Comune di Monza.",
@@ -1107,9 +1107,9 @@ export const cities: City[] = [
     coordinates: [14.3335, 41.0739],
     duration: "1 anno (rinnovabile)",
     office_address:
-      "Comune di Caserta – Ufficio Mobilità, Piazza Vanvitelli 1, 81100 Caserta",
+      "Comune di Caserta - Ufficio Mobilità, Piazza Vanvitelli 1, 81100 Caserta",
     office_hours:
-      "Lunedì–Venerdì 8:30–13:00; Martedì e Giovedì anche 15:00–17:00",
+      "Lunedì-Venerdì 8:30-13:00; Martedì e Giovedì anche 15:00-17:00",
     phone: "+39 0823 273111",
     email: "ztl@comune.caserta.it",
     parking_zones_description:
@@ -1119,10 +1119,10 @@ export const cities: City[] = [
     cost: "Gratuito",
     payment_method: "Registrazione tramite portale comunale o sportello",
     required_documents:
-      "Carta di circolazione, documento d’identità, modulo richiesta",
+      "Carta di circolazione, documento d'identità, modulo richiesta",
     requirements: "Veicolo 100% elettrico (BEV)",
     notes:
-      "La gratuità del parcheggio è valida solo per le prime due ore giornaliere. L’autorizzazione deve essere richiesta al Comune per usufruire delle agevolazioni.",
+      "La gratuità del parcheggio è valida solo per le prime due ore giornaliere. L'autorizzazione deve essere richiesta al Comune per usufruire delle agevolazioni.",
   },
   {
     id: "ravenna",
@@ -1137,9 +1137,9 @@ export const cities: City[] = [
     coordinates: [12.2035, 44.4184],
     duration: "1 anno (rinnovabile)",
     office_address:
-      "Comune di Ravenna – Ufficio Mobilità, Via Berlinguer 58, 48124 Ravenna",
+      "Comune di Ravenna - Ufficio Mobilità, Via Berlinguer 58, 48124 Ravenna",
     office_hours:
-      "Lunedì–Venerdì 8:30–13:00; Martedì e Giovedì anche 14:30–16:30",
+      "Lunedì-Venerdì 8:30-13:00; Martedì e Giovedì anche 14:30-16:30",
     phone: "+39 0544 482111",
     email: "permessi@comune.ravenna.it",
     parking_zones_description:
@@ -1149,7 +1149,7 @@ export const cities: City[] = [
     cost: "Gratuito",
     payment_method: "Non necessario",
     required_documents:
-      "Carta di circolazione, documento d’identità, modulo online",
+      "Carta di circolazione, documento d'identità, modulo online",
     requirements: "Veicolo esclusivamente elettrico (BEV)",
     notes:
       "È necessario ottenere il contrassegno di tipo VE per poter circolare e sostare gratuitamente. Il contrassegno deve essere esposto sul parabrezza.",
@@ -1167,8 +1167,8 @@ export const cities: City[] = [
     coordinates: [13.2363, 46.0633],
     duration: "Illimitata (fino a variazione della normativa)",
     office_address:
-      "SSM Udine – Società di Servizi alla Mobilità, Viale Venezia 6, 33100 Udine",
-    office_hours: "Lunedì–Venerdì 9:00–12:30",
+      "SSM Udine - Società di Servizi alla Mobilità, Viale Venezia 6, 33100 Udine",
+    office_hours: "Lunedì-Venerdì 9:00-12:30",
     phone: "+39 0432 504411",
     email: "info@ssm.it",
     parking_zones_description:
@@ -1195,8 +1195,8 @@ export const cities: City[] = [
     coordinates: [15.2165, 37.7275],
     duration: "Illimitata (fino a nuova disposizione comunale)",
     office_address:
-      "Comune di Riposto – Comando Polizia Municipale, Piazza San Pietro 1, 95018 Riposto (CT)",
-    office_hours: "Lunedì–Venerdì 8:30–13:00",
+      "Comune di Riposto - Comando Polizia Municipale, Piazza San Pietro 1, 95018 Riposto (CT)",
+    office_hours: "Lunedì-Venerdì 8:30-13:00",
     phone: "+39 095 963011",
     email: "protocollo@pec.comune.riposto.ct.it",
     parking_zones_description:
@@ -1208,7 +1208,7 @@ export const cities: City[] = [
       "Nessuna documentazione obbligatoria; consigliata esposizione volontaria della dicitura 'VEICOLO ELETTRICO'",
     requirements: "Veicolo a trazione elettrica o plug-in",
     notes:
-      "Il Comune consiglia l’esposizione di una scritta ben visibile sul cruscotto con dicitura 'VEICOLO ELETTRICO', anche realizzata autonomamente.",
+      "Il Comune consiglia l'esposizione di una scritta ben visibile sul cruscotto con dicitura 'VEICOLO ELETTRICO', anche realizzata autonomamente.",
   },
   {
     id: "san-daniele-del-friuli",
@@ -1222,8 +1222,8 @@ export const cities: City[] = [
     coordinates: [13.0107, 46.1584],
     duration: "Illimitata (salvo modifiche regolamento)",
     office_address:
-      "Comune di San Daniele del Friuli – Via del Colle 10, 33038 San Daniele (UD)",
-    office_hours: "Lunedì–Venerdì 9:00–12:00",
+      "Comune di San Daniele del Friuli - Via del Colle 10, 33038 San Daniele (UD)",
+    office_hours: "Lunedì-Venerdì 9:00-12:00",
     phone: "+39 0432 939511",
     email: "info@comune.sandaniele.ud.it",
     parking_zones_description:
@@ -1233,7 +1233,7 @@ export const cities: City[] = [
     cost: "Gratuito",
     payment_method: "Non necessario",
     required_documents:
-      "Libretto di circolazione visibile all’interno del veicolo",
+      "Libretto di circolazione visibile all'interno del veicolo",
     requirements: "Veicolo 100% elettrico (BEV)",
     notes:
       "Nessuna richiesta formale necessaria. È sufficiente esporre il libretto in modo leggibile per i controlli.",
@@ -1250,8 +1250,8 @@ export const cities: City[] = [
     coordinates: [13.1463, 45.6825],
     duration: "Stagionale: dal 1 maggio al 30 settembre",
     office_address:
-      "Comune di Lignano Sabbiadoro – Viale Europa 26, 33054 Lignano Sabbiadoro (UD)",
-    office_hours: "Lunedì–Venerdì 9:00–12:00",
+      "Comune di Lignano Sabbiadoro - Viale Europa 26, 33054 Lignano Sabbiadoro (UD)",
+    office_hours: "Lunedì-Venerdì 9:00-12:00",
     phone: "+39 0431 409111",
     email: "urp@lignanosabbiadoro.it",
     parking_zones_description:
@@ -1264,7 +1264,7 @@ export const cities: City[] = [
       "Libretto di circolazione esposto in modo ben visibile",
     requirements: "Veicolo elettrico (BEV)",
     notes:
-      "La sosta è gratuita tutto l’anno, ma nei mesi da maggio a settembre è necessario esporre il libretto per beneficiare dell’agevolazione.",
+      "La sosta è gratuita tutto l'anno, ma nei mesi da maggio a settembre è necessario esporre il libretto per beneficiare dell'agevolazione.",
   },
   {
     id: "trevi",
@@ -1278,8 +1278,8 @@ export const cities: City[] = [
     coordinates: [12.7435, 42.8842],
     duration: "Illimitata",
     office_address:
-      "Comune di Trevi – Piazza Mazzini 1, 06039 Trevi (PG)",
-    office_hours: "Lunedì–Venerdì 8:30–13:00",
+      "Comune di Trevi - Piazza Mazzini 1, 06039 Trevi (PG)",
+    office_hours: "Lunedì-Venerdì 8:30-13:00",
     phone: "+39 0742 332222",
     email: "info@comune.trevi.pg.it",
     parking_zones_description:
@@ -1306,8 +1306,8 @@ export const cities: City[] = [
     coordinates: [8.0269, 43.8888],
     duration: "Variabile secondo segnaletica di zona",
     office_address:
-      "Comune di Imperia – Ufficio Mobilità, Piazza Dante 4, 18100 Imperia",
-    office_hours: "Lunedì–Venerdì 9:00–13:00",
+      "Comune di Imperia - Ufficio Mobilità, Piazza Dante 4, 18100 Imperia",
+    office_hours: "Lunedì-Venerdì 9:00-13:00",
     phone: "+39 0183 7011",
     email: "info@comune.imperia.it",
     parking_zones_description:
@@ -1334,8 +1334,8 @@ export const cities: City[] = [
     coordinates: [9.6689, 45.6983],
     duration: "ZTL: 5 anni — Sosta: fino a scadenza pass annuale",
     office_address:
-      "Comune di Bergamo – Ufficio Permessi Mobilità, Via San Giorgio 3, 24122 Bergamo",
-    office_hours: "Lunedì–Venerdì 8:30–12:30; Martedì e Giovedì anche 14:00–16:00",
+      "Comune di Bergamo - Ufficio Permessi Mobilità, Via San Giorgio 3, 24122 Bergamo",
+    office_hours: "Lunedì-Venerdì 8:30-12:30; Martedì e Giovedì anche 14:00-16:00",
     phone: "+39 035 399111",
     email: "permessi@comune.bergamo.it",
     parking_zones_description:
@@ -1345,7 +1345,7 @@ export const cities: City[] = [
     cost: "Gratuito",
     payment_method: "Non necessario",
     required_documents:
-      "Carta di circolazione, documento d’identità, modulo richiesta",
+      "Carta di circolazione, documento d'identità, modulo richiesta",
     requirements: "Veicolo esclusivamente elettrico (BEV)",
     notes:
       "Per la ZTL, l'autorizzazione va richiesta con validità 5 anni. La gratuità della sosta blu è valida solo per i permessi già attivi e non rinnovabili automaticamente.",
@@ -1362,8 +1362,8 @@ export const cities: City[] = [
     coordinates: [18.1713, 40.1743],
     duration: "1 anno (rinnovabile)",
     office_address:
-      "Comune di Galatina – Polizia Municipale, Via Vittorio Emanuele II, 73013 Galatina (LE)",
-    office_hours: "Lunedì–Venerdì 8:30–12:30",
+      "Comune di Galatina - Polizia Municipale, Via Vittorio Emanuele II, 73013 Galatina (LE)",
+    office_hours: "Lunedì-Venerdì 8:30-12:30",
     phone: "+39 0836 633111",
     email: "comandopm@comune.galatina.le.it",
     parking_zones_description:
@@ -1373,7 +1373,7 @@ export const cities: City[] = [
     cost: "Gratuito",
     payment_method: "Non necessario",
     required_documents:
-      "Carta di circolazione, documento d’identità (se richiesto)",
+      "Carta di circolazione, documento d'identità (se richiesto)",
     requirements: "Veicolo esclusivamente elettrico (BEV)",
     notes:
       "Si consiglia di contattare la Polizia Municipale per eventuale registrazione della targa o chiarimenti sui limiti temporali della sosta.",
@@ -1389,20 +1389,49 @@ export const cities: City[] = [
     coordinates: [12.7438, 42.7352],
     duration: "1 anno (con rinnovo annuale)",
     office_address:
-      "Comune di Spoleto – Ufficio Permessi Mobilità, Via Cerquiglia 3, 06049 Spoleto (PG)",
-    office_hours: "Lunedì–Venerdì 8:30–13:00; Martedì e Giovedì anche 15:00–17:00",
+      "Comune di Spoleto - Ufficio Permessi Mobilità, Via Cerquiglia 3, 06049 Spoleto (PG)",
+    office_hours: "Lunedì-Venerdì 8:30-13:00; Martedì e Giovedì anche 15:00-17:00",
     phone: "+39 0743 2181",
     email: "ztl@comune.spoleto.pg.it",
     parking_zones_description:
       "Non sono previste esenzioni o agevolazioni per la sosta su strisce blu, neppure per veicoli elettrici",
     ztl_access_description:
-      "L’accesso alla ZTL è consentito esclusivamente ai residenti del centro storico o a chi ha attività lavorative all'interno, previa richiesta cartacea e pagamento",
+      "L'accesso alla ZTL è consentito esclusivamente ai residenti del centro storico o a chi ha attività lavorative all'interno, previa richiesta cartacea e pagamento",
     cost: "42€ per il primo rilascio, 10€/anno per i rinnovi",
     payment_method: "Pagamento presso sportello o tramite bonifico secondo istruzioni comunali",
     required_documents:
-      "Carta di circolazione, documento d’identità, modulo cartaceo compilato e motivazione (residenza o attività)",
+      "Carta di circolazione, documento d'identità, modulo cartaceo compilato e motivazione (residenza o attività)",
     requirements: "Residenza o attività lavorativa nel centro storico",
     notes:
-      "Non sono previste agevolazioni per i veicoli elettrici se non rientranti nei criteri sopra indicati. Il pass va richiesto a mano presso l’ufficio mobilità.",
+      "Non sono previste agevolazioni per i veicoli elettrici se non rientranti nei criteri sopra indicati. Il pass va richiesto a mano presso l'ufficio mobilità.",
+  },
+  {
+    id: "terni",
+    name: "Terni",
+    region: "Umbria",
+    description:
+      "Accesso alla ZTL per veicoli elettrici con permesso specifico. Il permesso consente solo il transito e ha un costo annuale",
+    request_url:
+      "https://www.ternireti.it/permesso-auto-alettriche/", // da verificare eventuale link diretto al portale permessi
+    needs_display: true,
+    free_parking: false,
+    coordinates: [12.6464, 42.5634],
+    duration: "1 anno",
+    office_address:
+      "Comune di Terni - Ufficio Mobilità, Via I Maggio 65, 05100 Terni",
+    office_hours: "Lunedì-Venerdì 8:30-13:00; Martedì e Giovedì anche 15:00-17:00",
+    phone: "+39 0744 5491",
+    email: "ztl@comune.terni.it",
+    parking_zones_description:
+      "Nessuna agevolazione prevista per la sosta su strisce blu",
+    ztl_access_description:
+      "L’accesso alla ZTL è consentito ai veicoli elettrici solo previa richiesta di permesso, valido esclusivamente per il transito",
+    cost: "200€/anno",
+    payment_method: "Pagamento online o presso sportello",
+    required_documents:
+      "Carta di circolazione, documento d’identità, modulo richiesta (anche online)",
+    requirements: "Veicolo 100% elettrico (BEV)",
+    notes:
+      "Il permesso ha validità annuale e consente unicamente il transito all'interno della ZTL. La sosta resta a pagamento e non è prevista alcuna esenzione.",
   }
 ];
