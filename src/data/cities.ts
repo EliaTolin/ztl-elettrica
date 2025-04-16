@@ -33,7 +33,7 @@ export const cities: City[] = [
     needs_display: true,
     free_parking: true,
     coordinates: [12.4964, 41.9028],
-    duration: "5 anni",
+    duration: "Illimitata",
     office_address:
       "Roma Servizi per la Mobilità, Piazzale degli Archivi 40, 00144 Roma",
     office_hours: "Lunedì-Venerdì 8:30-16:30",
@@ -89,7 +89,7 @@ export const cities: City[] = [
     needs_display: true,
     free_parking: true,
     coordinates: [11.2558, 43.7696],
-    duration: "4 anni",
+    duration: "5 anni",
     office_address: "Servizio Mobilità, Via Mannelli 119/i, 50132 Firenze",
     office_hours:
       "Lunedì, Mercoledì, Venerdì 9:00-12:30; Martedì e Giovedì 9:00-12:30 e 15:00-17:00",
