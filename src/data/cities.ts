@@ -1349,5 +1349,33 @@ export const cities: City[] = [
     requirements: "Veicolo esclusivamente elettrico (BEV)",
     notes:
       "Per la ZTL, l'autorizzazione va richiesta con validità 5 anni. La gratuità della sosta blu è valida solo per i permessi già attivi e non rinnovabili automaticamente.",
+  },
+  {
+    id: "galatina",
+    name: "Galatina",
+    region: "Puglia",
+    description:
+      "Parcheggio gratuito sulle strisce blu per veicoli elettrici nel Comune di Galatina",
+    request_url: "https://www.galatina.it/sites/default/files/2022-03/allegarodel4901.pdf", // sito istituzionale, nessuna pagina dedicata specifica trovata
+    needs_display: true,
+    free_parking: true,
+    coordinates: [18.1713, 40.1743],
+    duration: "1 anno (rinnovabile)",
+    office_address:
+      "Comune di Galatina – Polizia Municipale, Via Vittorio Emanuele II, 73013 Galatina (LE)",
+    office_hours: "Lunedì–Venerdì 8:30–12:30",
+    phone: "+39 0836 633111",
+    email: "comandopm@comune.galatina.le.it",
+    parking_zones_description:
+      "Sosta gratuita per veicoli elettrici sulle strisce blu previa eventuale registrazione o identificazione del veicolo",
+    ztl_access_description:
+      "Non specificato o non previsto",
+    cost: "Gratuito",
+    payment_method: "Non necessario",
+    required_documents:
+      "Carta di circolazione, documento d’identità (se richiesto)",
+    requirements: "Veicolo esclusivamente elettrico (BEV)",
+    notes:
+      "Si consiglia di contattare la Polizia Municipale per eventuale registrazione della targa o chiarimenti sui limiti temporali della sosta.",
   }
 ];
