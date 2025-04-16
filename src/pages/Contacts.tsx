@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -70,9 +69,13 @@ const Contacts = () => {
               <p className="mb-4">Questo progetto è open source. Contribuisci su GitHub:</p>
               <Button
                 variant="outline"
-                className="w-full"
+                className="w-full flex items-center justify-center gap-2"
+                asChild
               >
-                Prossimamente
+                <a href="https://github.com/eliatolin/ztl-elettrica" target="_blank" rel="noopener noreferrer">
+                  <Github className="h-4 w-4" />
+                  Contribuisci
+                </a>
               </Button>
             </CardContent>
           </Card>
