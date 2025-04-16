@@ -955,11 +955,11 @@ export const cities: City[] = [
     name: "Cagliari",
     region: "Sardegna",
     description:
-      "Diverse ZTL nei quartieri storici di Marina, Castello, Villanova e Stampace. È necessario richiedere il pass tramite SPID",
+      "Accesso alle ZTL nei quartieri storici e sosta gratuita nei parcheggi di superficie per veicoli elettrici previa richiesta di pass digitale tramite SPID",
     request_url:
       "https://www.comune.cagliari.it/portale/page/it/pass_ztl_per_veicoli_a_trazione_elettrica?contentId=SRV10367",
     needs_display: true,
-    free_parking: false,
+    free_parking: true,
     coordinates: [9.1217, 39.2238],
     duration: "1 anno (rinnovabile)",
     office_address:
@@ -969,16 +969,16 @@ export const cities: City[] = [
     phone: "+39 070 6771",
     email: "ufficioztl@comune.cagliari.it",
     parking_zones_description:
-      "Non sono previste esenzioni sulle strisce blu o altri tipi di parcheggio",
+      "Sosta gratuita consentita nei parcheggi a pagamento di superficie gestiti da Parkar e Apcoa, **esclusa** l'area portuale (di competenza demaniale)",
     ztl_access_description:
-      "Accesso consentito nelle ZTL dei quartieri storici solo previa autorizzazione tramite SPID sul sito comunale",
+      "Accesso consentito nelle ZTL dei quartieri Marina, Castello, Villanova e Stampace, previa richiesta del pass tramite SPID",
     cost: "Gratuito",
     payment_method: "Richiesta online tramite SPID",
     required_documents:
-      "Carta di circolazione del veicolo, documento d’identità, codice fiscale (da allegare digitalmente durante la richiesta)",
-    requirements: "Veicolo con alimentazione esclusivamente elettrica (BEV)",
+      "Carta di circolazione, documento d’identità, codice fiscale (da caricare digitalmente durante la richiesta)",
+    requirements: "Veicolo esclusivamente elettrico (BEV)",
     notes:
-      "Il permesso è digitale e deve essere richiesto esclusivamente tramite SPID. Non è prevista sosta gratuita.",
+      "Il pass ha validità annuale e deve essere richiesto tramite SPID. Il contrassegno è digitale e include accesso ZTL e sosta gratuita (con limitazioni).",
   },
   {
     id: "la-spezia",
