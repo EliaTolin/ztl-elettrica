@@ -696,7 +696,7 @@ export const cities: City[] = [
       "Contrassegno E per veicoli elettrici con accesso ZTL (escluse le aree pedonali) e sosta gratuita su strisce blu e gialle",
     request_url:
       "https://www.comune.brescia.it/aree-tematiche/mobilita-e-trasporti/permessi-ztl/contrassegno-di-tipo-e-auto-elettrica",
-    needs_display: false,
+    needs_display: true,
     free_parking: true,
     coordinates: [10.2118, 45.5416],
     duration: "Illimitata (finché sussistono i requisiti)",
