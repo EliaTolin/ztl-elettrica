@@ -489,7 +489,7 @@ export const cities: City[] = [
     description:
       "ZTL del centro storico di Senigallia con accesso e sosta gratuita per veicoli esclusivamente elettrici",
     request_url:
-      "https://www.comune.senigallia.an.it/servizio/richiesta-permessi-di-circolazione-in-zona-a-traffico-limitato-e-area-pedonale/", // verifica il link ufficiale se disponibile
+      "https://www.comune.senigallia.an.it/servizio/richiesta-permessi-di-circolazione-in-zona-a-traffico-limitato-e-area-pedonale/", 
     needs_display: true,
     free_parking: true,
     coordinates: [13.2149, 43.7184],
@@ -549,7 +549,7 @@ export const cities: City[] = [
     description:
       "Accesso alla ZTL per veicoli elettrici e ibridi previa richiesta via email al Comune",
     request_url:
-      "https://comune.rieti.it/novita/permessi-accesso-ztl-2025-le-modalita-di-rinnovo-e-nuove-richieste/", // da verificare se esiste una pagina specifica
+      "https://comune.rieti.it/novita/permessi-accesso-ztl-2025-le-modalita-di-rinnovo-e-nuove-richieste/", 
     needs_display: false,
     free_parking: false,
     coordinates: [12.8608, 42.4048],
@@ -725,7 +725,7 @@ export const cities: City[] = [
     description:
       "Parcheggio gratuito su tutti gli stalli blu per veicoli elettrici 100%, previa registrazione via email",
     request_url:
-      "https://mobilita.comune.pescara.it/le-auto-elettriche-potranno-circolare-liberamente-nelle-zone-a-traffico-limitato/#:~:text=Le%20auto%20elettriche%20potranno%20circolare%20liberamente%20nelle%20zone%20a%20traffico%20limitato,-Comunicato%20Stampa&text=Le%20auto%20elettriche%20potranno%20circolare%20liberamente%20in%20Ztl%2C%20senza%20vincoli,auto%20ad%20esclusiva%20propulsione%20elettrica", // da verificare se esiste una pagina dedicata
+      "https://mobilita.comune.pescara.it/le-auto-elettriche-potranno-circolare-liberamente-nelle-zone-a-traffico-limitato/#:~:text=Le%20auto%20elettriche%20potranno%20circolare%20liberamente%20nelle%20zone%20a%20traffico%20limitato,-Comunicato%20Stampa&text=Le%20auto%20elettriche%20potranno%20circolare%20liberamente%20in%20Ztl%2C%20senza%20vincoli,auto%20ad%20esclusiva%20propulsione%20elettrica", 
     needs_display: true,
     free_parking: true,
     coordinates: [14.2028, 42.4643],
@@ -1101,7 +1101,7 @@ export const cities: City[] = [
     description:
       "Parcheggio gratuito per le prime due ore e accesso alla ZTL per veicoli elettrici, previa registrazione",
     request_url:
-      "https://trasparenza.comune.caserta.it/archivio5_modulistica_0_18490.html", // da verificare se disponibile online
+      "https://trasparenza.comune.caserta.it/archivio5_modulistica_0_18490.html", 
     needs_display: true,
     free_parking: true,
     coordinates: [14.3335, 41.0739],
@@ -1210,4 +1210,144 @@ export const cities: City[] = [
     notes:
       "Il Comune consiglia l’esposizione di una scritta ben visibile sul cruscotto con dicitura 'VEICOLO ELETTRICO', anche realizzata autonomamente.",
   },
+  {
+    id: "san-daniele-del-friuli",
+    name: "San Daniele del Friuli",
+    region: "Friuli Venezia Giulia",
+    description:
+      "Parcheggio gratuito sulle strisce blu per veicoli elettrici previa esposizione del libretto di circolazione",
+    request_url: "https://www.comune.sandanieledelfriuli.ud.it/it/servizi-49762/permessi-al-transito-e-sosta-91606", 
+    needs_display: true,
+    free_parking: true,
+    coordinates: [13.0107, 46.1584],
+    duration: "Illimitata (salvo modifiche regolamento)",
+    office_address:
+      "Comune di San Daniele del Friuli – Via del Colle 10, 33038 San Daniele (UD)",
+    office_hours: "Lunedì–Venerdì 9:00–12:00",
+    phone: "+39 0432 939511",
+    email: "info@comune.sandaniele.ud.it",
+    parking_zones_description:
+      "Sosta gratuita su strisce blu previa esposizione del libretto di circolazione sul cruscotto",
+    ztl_access_description:
+      "Non specificato",
+    cost: "Gratuito",
+    payment_method: "Non necessario",
+    required_documents:
+      "Libretto di circolazione visibile all’interno del veicolo",
+    requirements: "Veicolo 100% elettrico (BEV)",
+    notes:
+      "Nessuna richiesta formale necessaria. È sufficiente esporre il libretto in modo leggibile per i controlli.",
+  },
+  {
+    id: "lignano-sabbiadoro",
+    name: "Lignano Sabbiadoro",
+    region: "Friuli Venezia Giulia",
+    description:
+      "Parcheggio gratuito sulle strisce blu per veicoli elettrici nei mesi a pagamento, previa esposizione del libretto",
+    request_url: "https://comune.lignano-sabbiadoro.ud.it/servizi/mobilita-e-trasporti/autorizzazione-per-il-transito-su-zona-a-traffico-limitato-ztl", 
+    needs_display: true,
+    free_parking: true,
+    coordinates: [13.1463, 45.6825],
+    duration: "Stagionale: dal 1 maggio al 30 settembre",
+    office_address:
+      "Comune di Lignano Sabbiadoro – Viale Europa 26, 33054 Lignano Sabbiadoro (UD)",
+    office_hours: "Lunedì–Venerdì 9:00–12:00",
+    phone: "+39 0431 409111",
+    email: "urp@lignanosabbiadoro.it",
+    parking_zones_description:
+      "Parcheggio gratuito sulle strisce blu previa esposizione del libretto; non si paga nei mesi invernali",
+    ztl_access_description:
+      "Non previsto",
+    cost: "Gratuito",
+    payment_method: "Non necessario",
+    required_documents:
+      "Libretto di circolazione esposto in modo ben visibile",
+    requirements: "Veicolo elettrico (BEV)",
+    notes:
+      "La sosta è gratuita tutto l’anno, ma nei mesi da maggio a settembre è necessario esporre il libretto per beneficiare dell’agevolazione.",
+  },
+  {
+    id: "trevi",
+    name: "Trevi",
+    region: "Umbria",
+    description:
+      "Sosta gratuita sulle strisce blu per veicoli elettrici, nessuna richiesta necessaria",
+    request_url: "https://www.comune.trevi.pg.it/notizie/parcheggi-gratuiti-per-le-auto-elettriche",
+    needs_display: false,
+    free_parking: true,
+    coordinates: [12.7435, 42.8842],
+    duration: "Illimitata",
+    office_address:
+      "Comune di Trevi – Piazza Mazzini 1, 06039 Trevi (PG)",
+    office_hours: "Lunedì–Venerdì 8:30–13:00",
+    phone: "+39 0742 332222",
+    email: "info@comune.trevi.pg.it",
+    parking_zones_description:
+      "Sosta gratuita sulle strisce blu per veicoli elettrici senza alcuna formalità",
+    ztl_access_description:
+      "Non previsto",
+    cost: "Gratuito",
+    payment_method: "Non necessario",
+    required_documents:
+      "Nessuno",
+    requirements: "Veicolo 100% elettrico",
+    notes:
+      "Non è necessario esporre né registrarsi: la gratuità è automatica per i veicoli BEV.",
+  },
+  {
+    id: "imperia",
+    name: "Imperia",
+    region: "Liguria",
+    description:
+      "Parcheggio gratuito su strisce blu per veicoli elettrici e ibridi plug-in con emissioni ≤ 50 g/km CO2, previa esposizione di apposito contrassegno verde",
+    request_url: "https://sportellotelematico.comune.imperia.it/action%3Ac_e290%3Aveicoli.elettrici",
+    needs_display: true,
+    free_parking: true,
+    coordinates: [8.0269, 43.8888],
+    duration: "Variabile secondo segnaletica di zona",
+    office_address:
+      "Comune di Imperia – Ufficio Mobilità, Piazza Dante 4, 18100 Imperia",
+    office_hours: "Lunedì–Venerdì 9:00–13:00",
+    phone: "+39 0183 7011",
+    email: "info@comune.imperia.it",
+    parking_zones_description:
+      "Sosta gratuita nelle aree a pagamento previa esposizione di contrassegno verde identificativo e disco orario",
+    ztl_access_description:
+      "Non previsto",
+    cost: "Gratuito",
+    payment_method: "Non necessario",
+    required_documents:
+      "Contrassegno esposto; disco orario; carta di circolazione su richiesta",
+    requirements: "BEV o PHEV con emissioni ≤ 50g/km CO2",
+    notes:
+      "La sosta gratuita è limitata alla durata massima consentita dalla segnaletica; occorre esporre il contrassegno verde e il disco orario.",
+  },{
+    id: "bergamo",
+    name: "Bergamo",
+    region: "Lombardia",
+    description:
+      "Parcheggio gratuito su strisce blu (fino a scadenza del pass già rilasciato) e accesso alla ZTL gratuito per veicoli elettrici previa registrazione",
+    request_url:
+      "https://www.comune.bergamo.it/procedure%3Ac_a794%3Acomunicazione.targa.propulsione.elettrica",
+    needs_display: true,
+    free_parking: true,
+    coordinates: [9.6689, 45.6983],
+    duration: "ZTL: 5 anni — Sosta: fino a scadenza pass annuale",
+    office_address:
+      "Comune di Bergamo – Ufficio Permessi Mobilità, Via San Giorgio 3, 24122 Bergamo",
+    office_hours: "Lunedì–Venerdì 8:30–12:30; Martedì e Giovedì anche 14:00–16:00",
+    phone: "+39 035 399111",
+    email: "permessi@comune.bergamo.it",
+    parking_zones_description:
+      "Parcheggio gratuito su strisce blu per BEV solo per chi ha già ottenuto il pass; la gratuità dura fino alla scadenza del permesso (1 anno dalla data di rilascio)",
+    ztl_access_description:
+      "Accesso ZTL consentito gratuitamente ai veicoli elettrici previa registrazione, con validità quinquennale",
+    cost: "Gratuito",
+    payment_method: "Non necessario",
+    required_documents:
+      "Carta di circolazione, documento d’identità, modulo richiesta",
+    requirements: "Veicolo esclusivamente elettrico (BEV)",
+    notes:
+      "Per la ZTL, l'autorizzazione va richiesta con validità 5 anni. La gratuità della sosta blu è valida solo per i permessi già attivi e non rinnovabili automaticamente.",
+  }
 ];
