@@ -25,48 +25,64 @@ const Header = () => {
         </div>
         
         {isMobile ? (
-          <Drawer>
-            <DrawerTrigger asChild>
+          <div className="flex items-center gap-2">
+            <a
+              href="https://t.me/ztlelettrica"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button 
                 variant="outline" 
-                size="icon" 
-                aria-label="Menu" 
-                className="bg-primary/10 text-primary hover:bg-primary/20 transition-all duration-300 ease-in-out transform active:scale-95"
+                size="sm"
+                aria-label="Telegram" 
+                className="bg-primary/10 text-primary hover:bg-primary/20 transition-all duration-300 ease-in-out transform active:scale-95 flex items-center gap-2 px-3"
               >
-                <Menu className="h-6 w-6 text-primary" />
+                <TelegramIcon className="h-5 w-5" color="#0088cc" />
               </Button>
-            </DrawerTrigger>
-            <DrawerContent>
-              <DrawerHeader className="text-left">
-                <DrawerTitle>Menu</DrawerTitle>
-              </DrawerHeader>
-              <nav className="px-4 pb-8">
-                <div className="space-y-4">
-                  <Link to="/" className="flex items-center gap-2 p-2 rounded-lg hover:bg-accent transition-colors">
-                    <Map className="h-4 w-4" />
-                    <span className="text-sm font-medium">Mappa</span>
-                  </Link>
-                  <Link to="/richiedi-zona" className="flex items-center gap-2 p-2 rounded-lg hover:bg-accent transition-colors">
-                    <Plus className="h-4 w-4" />
-                    <span className="text-sm font-medium">Suggerisci Zona</span>
-                  </Link>
-                  <Link to="/contatti" className="flex items-center gap-2 p-2 rounded-lg hover:bg-accent transition-colors">
-                    <MessageCircle className="h-4 w-4" />
-                    <span className="text-sm font-medium">Contatti</span>
-                  </Link>
-                  <a
-                    href="https://t.me/ztlelettrica"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 p-2 rounded-lg hover:bg-accent transition-colors"
-                  >
-                    <TelegramIcon className="h-4 w-4" color="#0088cc" />
-                    <span className="text-sm font-medium">Gruppo Telegram</span>
-                  </a>
-                </div>
-              </nav>
-            </DrawerContent>
-          </Drawer>
+            </a>
+            <Drawer>
+              <DrawerTrigger asChild>
+                <Button 
+                  variant="outline" 
+                  size="icon" 
+                  aria-label="Menu" 
+                  className="bg-primary/10 text-primary hover:bg-primary/20 transition-all duration-300 ease-in-out transform active:scale-95"
+                >
+                  <Menu className="h-6 w-6 text-primary" />
+                </Button>
+              </DrawerTrigger>
+              <DrawerContent>
+                <DrawerHeader className="text-left">
+                  <DrawerTitle>Menu</DrawerTitle>
+                </DrawerHeader>
+                <nav className="px-4 pb-8">
+                  <div className="space-y-4">
+                    <Link to="/" className="flex items-center gap-2 p-2 rounded-lg hover:bg-accent transition-colors">
+                      <Map className="h-4 w-4" />
+                      <span className="text-sm font-medium">Mappa</span>
+                    </Link>
+                    <Link to="/richiedi-zona" className="flex items-center gap-2 p-2 rounded-lg hover:bg-accent transition-colors">
+                      <Plus className="h-4 w-4" />
+                      <span className="text-sm font-medium">Suggerisci Zona</span>
+                    </Link>
+                    <Link to="/contatti" className="flex items-center gap-2 p-2 rounded-lg hover:bg-accent transition-colors">
+                      <MessageCircle className="h-4 w-4" />
+                      <span className="text-sm font-medium">Contatti</span>
+                    </Link>
+                    <a
+                      href="https://t.me/ztlelettrica"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 p-2 rounded-lg hover:bg-accent transition-colors"
+                    >
+                      <TelegramIcon className="h-4 w-4" color="#0088cc" />
+                      <span className="text-sm font-medium">Gruppo Telegram</span>
+                    </a>
+                  </div>
+                </nav>
+              </DrawerContent>
+            </Drawer>
+          </div>
         ) : (
           <nav className="flex items-center gap-4">
             <Link to="/" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200">
