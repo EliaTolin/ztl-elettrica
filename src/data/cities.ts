@@ -249,7 +249,7 @@ export const cities: City[] = [
     region: "Liguria",
     description:
       "ZTL Centro Storico di Genova con regole specifiche per veicoli elettrici",
-    request_url: "https://smart.comune.genova.it/contenuti/ztl-centro-storico",
+    request_url: "https://genovaparcheggi.com/it/ztl.html",
     needs_display: false,
     free_parking: true,
     coordinates: [8.9463, 44.4049],
