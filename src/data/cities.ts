@@ -639,7 +639,7 @@ export const cities: City[] = [
     needs_display: true,
     free_parking: true,
     coordinates: [11.619, 44.835],
-    duration: "3 anni",
+    duration: "2 anni",
     office_address:
       "Ferrara TUA - Servizio Mobilità, Via Bologna 9, 44122 Ferrara",
     office_hours:
