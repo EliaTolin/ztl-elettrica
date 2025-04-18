@@ -1469,4 +1469,34 @@ export const cities: City[] = [
     notes:
       "È necessario esporre il tagliando cartaceo sul parabrezza. Il permesso è valido a tempo indeterminato, salvo variazioni regolamentari future.",
   },
+{
+  id: "treviso",
+  name: "Treviso",
+  region: "Veneto",
+  description:
+    "Accesso ZTL consentito ai veicoli elettrici previa registrazione e comunicazione della targa alla Polizia Locale. La sosta su strisce blu resta a pagamento",
+  request_url:
+    "https://portaleztl.comune.treviso.it/cittadino/richiesta_new.php",
+  needs_display: true,
+  free_parking: false,
+  coordinates: [12.2425, 45.6669],
+  duration: "1 anno (rinnovabile)",
+  office_address:
+    "Comune di Treviso – Ufficio Permessi ZTL, Via Castello d'Amore 2, 31100 Treviso",
+  office_hours:
+    "Lunedì–Venerdì 8:30–12:30; Martedì e Giovedì anche 14:30–16:30",
+  phone: "+39 0422 6581",
+  email: "pl.permessi@comune.treviso.it",
+  parking_zones_description:
+    "La sosta negli stalli blu è a pagamento secondo tariffa oraria. Tutti gli altri stalli seguono la regolamentazione del Codice della Strada e la segnaletica locale",
+  ztl_access_description:
+    "I veicoli elettrici possono accedere alla ZTL previa registrazione della targa tramite il portale del Comune o contattando la Polizia Locale",
+  cost: "Gratuito",
+  payment_method: "Non necessario",
+  required_documents:
+    "Carta di circolazione, modulo di richiesta targa ZTL",
+  requirements: "Veicolo esclusivamente elettrico (BEV)",
+  notes:
+    "Il permesso ZTL è digitale e valido previa registrazione. La sosta non è agevolata: gli stalli blu restano a pagamento anche per veicoli elettrici.",
+}
 ];
