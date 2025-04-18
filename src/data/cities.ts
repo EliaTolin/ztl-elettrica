@@ -92,7 +92,7 @@ export const cities: City[] = [
     duration: "5 anni",
     office_address: "Servizio Mobilità, Via Mannelli 119/i, 50132 Firenze",
     office_hours:
-      "Lunedì, Mercoledì, Venerdì 9:00–12:30; Martedì e Giovedì anche 15:00–17:00",
+      "Lunedì, Mercoledì, Venerdì 9:00-12:30; Martedì e Giovedì anche 15:00-17:00",
     phone: "+39 055 0556554",
     email: "contrassegni.ztl@comune.fi.it",
     parking_zones_description:
@@ -285,7 +285,7 @@ export const cities: City[] = [
     duration: "5 anni",
     office_address: "Ufficio Permessi ZTL, Via Vicenza 10a, 35138 Padova",
     office_hours:
-      "Lunedì–Venerdì 8:30–13:00; Martedì e Giovedì anche 15:00–17:00",
+      "Lunedì-Venerdì 8:30-13:00; Martedì e Giovedì anche 15:00-17:00",
     phone: "+39 049 8204700",
     email: "permessiztl@comune.padova.it",
     parking_zones_description:
@@ -298,7 +298,7 @@ export const cities: City[] = [
       "Targa del veicolo, copia della carta di circolazione da inviare via email",
     requirements: "Veicolo con alimentazione esclusivamente elettrica (BEV)",
     notes:
-      "Non è necessario esporre alcun contrassegno. L’autorizzazione è valida per 5 anni e viene gestita in modalità digitale dal Comune.",
+      "Non è necessario esporre alcun contrassegno. L'autorizzazione è valida per 5 anni e viene gestita in modalità digitale dal Comune.",
   },
   {
     id: "siena",
@@ -1327,30 +1327,30 @@ export const cities: City[] = [
     name: "Bergamo",
     region: "Lombardia",
     description:
-      "Accesso ZTL e parcheggio gratuito su strisce blu riservati ai veicoli elettrici di residenti a Bergamo, previa registrazione e rilascio del pass",
+      "Accesso ZTL e parcheggio gratuito su strisce blu riservati ai veicoli elettrici di residenti a Bergamo. I non residenti possono ottenere un permesso di solo transito nelle ZTL.",
     request_url:
       "https://www.comune.bergamo.it/procedure%3Ac_a794%3Acomunicazione.targa.propulsione.elettrica",
     needs_display: true,
     free_parking: true,
     coordinates: [9.6689, 45.6983],
-    duration: "ZTL: 5 anni — Sosta: 1 anno (non rinnovabile automaticamente)",
+    duration: "ZTL: 5 anni per residenti, 1 anno per non residenti — Sosta: 1 anno (non rinnovabile automaticamente)",
     office_address:
-      "Comune di Bergamo – Ufficio Permessi Mobilità, Via San Giorgio 3, 24122 Bergamo",
+      "Comune di Bergamo - Ufficio Permessi Mobilità, Via San Giorgio 3, 24122 Bergamo",
     office_hours:
-      "Lunedì–Venerdì 8:30–12:30; Martedì e Giovedì anche 14:00–16:00",
+      "Lunedì-Venerdì 8:30-12:30; Martedì e Giovedì anche 14:00-16:00",
     phone: "+39 035 399111",
     email: "permessi@comune.bergamo.it",
     parking_zones_description:
       "Parcheggio gratuito su strisce blu solo per residenti a Bergamo che hanno ottenuto il pass. Il permesso dura 1 anno e non è automaticamente rinnovabile",
     ztl_access_description:
-      "Accesso gratuito alla ZTL consentito ai veicoli elettrici **solo se intestati a residenti** e previa comunicazione della targa",
-    cost: "Gratuito",
-    payment_method: "Non necessario",
+      "Accesso gratuito alla ZTL consentito ai veicoli elettrici. I residenti ottengono un permesso valido 5 anni; i non residenti possono richiedere un permesso di solo transito valido 1 anno.",
+    cost: "Gratuito per residenti; 10€ per non residenti",
+    payment_method: "Pagamento online tramite portale ATB",
     required_documents:
-      "Carta di circolazione, documento d’identità, modulo di richiesta, residenza a Bergamo",
-    requirements: "Veicolo con alimentazione esclusivamente elettrica (BEV), intestato a residente nel Comune di Bergamo",
+      "Carta di circolazione, documento d'identità, modulo di richiesta. Per i non residenti, è necessario allegare la documentazione richiesta dal portale ATB.",
+    requirements: "Veicolo con alimentazione esclusivamente elettrica (BEV)",
     notes:
-      "I permessi ZTL e sosta blu sono concessi esclusivamente ai residenti. Per la ZTL la validità è di 5 anni; per la sosta blu, il pass ha validità 1 anno e non può essere rinnovato automaticamente.",
+      "I permessi ZTL e sosta blu sono concessi esclusivamente ai residenti. I non residenti possono ottenere un permesso di solo transito nelle ZTL, valido per un anno, previa registrazione tramite il portale ATB.",
   },
   {
     id: "galatina",
@@ -1431,11 +1431,11 @@ export const cities: City[] = [
     parking_zones_description:
       "Nessuna agevolazione prevista per la sosta su strisce blu",
     ztl_access_description:
-      "L’accesso alla ZTL è consentito ai veicoli elettrici solo previa richiesta di permesso, valido esclusivamente per il transito",
+      "L'accesso alla ZTL è consentito ai veicoli elettrici solo previa richiesta di permesso, valido esclusivamente per il transito",
     cost: "200€/anno",
     payment_method: "Pagamento online o presso sportello",
     required_documents:
-      "Carta di circolazione, documento d’identità, modulo richiesta (anche online)",
+      "Carta di circolazione, documento d'identità, modulo richiesta (anche online)",
     requirements: "Veicolo 100% elettrico (BEV)",
     notes:
       "Il permesso ha validità annuale e consente unicamente il transito all'interno della ZTL. La sosta resta a pagamento e non è prevista alcuna esenzione.",
@@ -1452,9 +1452,9 @@ export const cities: City[] = [
     coordinates: [10.6302, 44.6982],
     duration: "Senza scadenza (permesso rilasciato una sola volta)",
     office_address:
-      "Comune di Reggio Emilia – Ufficio Permessi Mobilità, Via Emilia San Pietro 1, 42121 Reggio Emilia",
+      "Comune di Reggio Emilia - Ufficio Permessi Mobilità, Via Emilia San Pietro 1, 42121 Reggio Emilia",
     office_hours:
-      "Lunedì–Venerdì 8:30–13:00; Martedì e Giovedì anche 15:00–17:00",
+      "Lunedì-Venerdì 8:30-13:00; Martedì e Giovedì anche 15:00-17:00",
     phone: "+39 0522 456111",
     email: "info@sostareonline.it",
     parking_zones_description:
@@ -1464,7 +1464,7 @@ export const cities: City[] = [
     cost: "Una tantum (quota iniziale, senza rinnovi)",
     payment_method: "Pagamento online tramite SostaRe oppure presso sportello",
     required_documents:
-      "Carta di circolazione, documento d’identità, modulo di richiesta",
+      "Carta di circolazione, documento d'identità, modulo di richiesta",
     requirements: "Veicolo esclusivamente elettrico (BEV)",
     notes:
       "È necessario esporre il tagliando cartaceo sul parabrezza. Il permesso è valido a tempo indeterminato, salvo variazioni regolamentari future.",
@@ -1482,9 +1482,9 @@ export const cities: City[] = [
   coordinates: [12.2425, 45.6669],
   duration: "1 anno (rinnovabile)",
   office_address:
-    "Comune di Treviso – Ufficio Permessi ZTL, Via Castello d'Amore 2, 31100 Treviso",
+    "Comune di Treviso - Ufficio Permessi ZTL, Via Castello d'Amore 2, 31100 Treviso",
   office_hours:
-    "Lunedì–Venerdì 8:30–12:30; Martedì e Giovedì anche 14:30–16:30",
+    "Lunedì-Venerdì 8:30-12:30; Martedì e Giovedì anche 14:30-16:30",
   phone: "+39 0422 6581",
   email: "pl.permessi@comune.treviso.it",
   parking_zones_description:
