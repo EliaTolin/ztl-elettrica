@@ -1417,7 +1417,7 @@ export const cities: City[] = [
     region: "Umbria",
     description:
       "Accesso alla ZTL per veicoli elettrici con permesso specifico. Il permesso consente solo il transito e ha un costo annuale",
-    request_url: "https://www.ternireti.it/permesso-auto-alettriche/", // da verificare eventuale link diretto al portale permessi
+    request_url: "https://www.ternireti.it/permesso-auto-alettriche/",
     needs_display: true,
     free_parking: false,
     coordinates: [12.6464, 42.5634],

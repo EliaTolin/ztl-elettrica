@@ -73,10 +73,6 @@ Per utilizzare la mappa, è necessario ottenere un token di accesso Mapbox:
 4. Push sul branch (`git push origin feature/AmazingFeature`)
 5. Apri una Pull Request
 
-## Licenza
-
-Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per maggiori dettagli.
-
 ## Contatti
 
 Per domande o suggerimenti, contattaci su:
