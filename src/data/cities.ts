@@ -244,33 +244,34 @@ export const cities: City[] = [
     notes: "",
   },
   {
-    id: "genova",
-    name: "Genova",
-    region: "Liguria",
-    description:
-      "ZTL Centro Storico di Genova con regole specifiche per veicoli elettrici",
-    request_url: "https://genovaparcheggi.com/it/ztl.html",
-    needs_display: false,
-    free_parking: true,
-    coordinates: [8.9463, 44.4049],
-    duration: "Permanente",
-    office_address:
-      "Genova Parcheggi, Viale Brigate Partigiane 1, 16129 Genova",
-    office_hours: "Lunedì-Venerdì 8:30-16:30",
-    phone: "+39 010 5411763",
-    email: "permessiztl@genovaparcheggi.it",
-    parking_zones_description:
-      "I veicoli elettrici possono parcheggiare gratuitamente nelle strisce blu",
-    ztl_access_description:
-      "I veicoli elettrici possono accedere alla ZTL previa registrazione della targa",
-    cost: "Gratuito per veicoli elettrici",
-    payment_method: "Non necessario",
-    required_documents:
-      "Carta di circolazione, documento d'identità, codice fiscale",
-    requirements: "Veicolo con alimentazione esclusivamente elettrica",
-    notes:
-      "È necessario registrare la targa del veicolo elettrico nel sistema di controllo",
-  },
+  id: "genova",
+  name: "Genova",
+  region: "Liguria",
+  description:
+    "Accesso alla ZTL e sosta gratuita su strisce blu riservati esclusivamente ai residenti con veicoli elettrici. È previsto un costo per il rilascio del permesso",
+  request_url:
+    "https://www.comune.genova.it/servizi/mobilita-e-trasporti/richiedere-permesso-di-accesso-ad-area-ztl",
+  needs_display: true,
+  free_parking: true,
+  coordinates: [8.9463, 44.4049],
+  duration: "5 anni",
+  office_address:
+    "Genova Parcheggi S.p.A. – Viale Brigate Partigiane 1, 16129 Genova",
+  office_hours: "Lunedì–Venerdì 8:30–16:30",
+  phone: "+39 010 539871",
+  email: "permessiztl@genovaparcheggi.it",
+  parking_zones_description:
+    "Sosta gratuita consentita solo nelle strisce blu e solo per i residenti che hanno ottenuto il permesso",
+  ztl_access_description:
+    "Accesso alla ZTL consentito solo ai residenti con veicolo elettrico previa autorizzazione",
+  cost: "27€ (una tantum per rilascio permesso)",
+  payment_method: "Pagamento online o presso sportello",
+  required_documents:
+    "Carta di circolazione, documento d’identità, modulo di richiesta, certificazione di residenza",
+  requirements: "Veicolo esclusivamente elettrico (BEV) intestato a residente a Genova",
+  notes:
+    "Il permesso è riservato ai soli residenti. Non sono previste agevolazioni per i non residenti, neanche per veicoli elettrici. Il permesso è digitale ma richiede esposizione di tagliando riepilogativo sul cruscotto.",
+},
   {
     id: "padova",
     name: "Padova",
