@@ -744,7 +744,7 @@ export const cities: City[] = [
       "Parcheggio gratuito su tutti gli stalli blu in città previa registrazione della targa",
     ztl_access_description:
       "Non specificato; agevolazione riferita esclusivamente alla sosta",
-    cost: "Gratuito",
+    cost: "Costa 5€ la domanda.",
     payment_method: "Non necessario",
     required_documents:
       "Carta di circolazione del veicolo da inviare via email",
