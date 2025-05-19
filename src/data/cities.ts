@@ -1499,5 +1499,34 @@ export const cities: City[] = [
   requirements: "Veicolo esclusivamente elettrico (BEV)",
   notes:
     "Il permesso ZTL è digitale e valido previa registrazione. La sosta non è agevolata: gli stalli blu restano a pagamento anche per veicoli elettrici.",
+},
+{
+  id: "messina",
+  name: "Messina",
+  region: "Sicilia",
+  description:
+    "Sosta gratuita su stalli blu su strada e nei parcheggi per veicoli elettrici, previa richiesta di pass a pagamento",
+  request_url:
+    "https://www.atmmessinaspa.it/ztl-strisceblu.php?pag=6",
+  needs_display: true,
+  free_parking: true,
+  coordinates: [15.5540, 38.1938],
+  duration: "Illimitata (fino a revoca o cambio regolamento)",
+  office_address:
+    "ATM Messina S.p.A., Via La Farina 336, 98123 Messina",
+  office_hours: "Lunedì–Venerdì 8:30–12:30; Martedì e Giovedì anche 14:30–16:30",
+  phone: "+39 090 9486701",
+  email: "info@atmmessinaspa.it",
+  parking_zones_description:
+    "Sosta gratuita consentita su tutti gli stalli blu in città e nei parcheggi di superficie, previa esposizione del pass rilasciato da ATM Messina",
+  ztl_access_description:
+    "Non specificato o non previsto",
+  cost: "30€ una tantum per il rilascio del pass",
+  payment_method: "Pagamento online o presso sportello ATM",
+  required_documents:
+    "Carta di circolazione, documento d’identità, modulo di richiesta",
+  requirements: "Veicolo elettrico (BEV o PHEV, verificare condizioni sul sito)",
+  notes:
+    "Il pass deve essere esposto sul parabrezza in modo visibile. Il pagamento è richiesto solo una volta al momento della richiesta.",
 }
 ];
