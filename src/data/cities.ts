@@ -1528,5 +1528,33 @@ export const cities: City[] = [
   requirements: "Veicolo elettrico (BEV o PHEV, verificare condizioni sul sito)",
   notes:
     "Il pass deve essere esposto sul parabrezza in modo visibile. Il pagamento è richiesto solo una volta al momento della richiesta.",
+},
+{
+  id: "arezzo",
+  name: "Arezzo",
+  region: "Toscana",
+  description:
+    "Accesso e sosta gratuita in ZTL A per veicoli elettrici. In ZTL B accesso e sosta consentiti solo in fasce orarie specifiche. I parcheggi a pagamento restano a pagamento per tutti",
+  request_url: "https://www.comune.arezzo.it/auto-elettriche",
+  needs_display: true,
+  free_parking: false,
+  coordinates: [11.8807, 43.4633],
+  duration: "1 anno (rinnovabile)",
+  office_address:
+    "Comune di Arezzo – Ufficio Permessi Mobilità, Piazza Amintore Fanfani 1, 52100 Arezzo",
+  office_hours: "Lunedì–Venerdì 8:30–13:00; Martedì e Giovedì anche 15:00–17:00",
+  phone: "+39 0575 3771",
+  email: "ztl@comune.arezzo.it",
+  parking_zones_description:
+    "Parcheggio gratuito solo nelle ZTL A e B secondo orari consentiti. I parcheggi a pagamento (strisce blu) restano a pagamento anche per le EV",
+  ztl_access_description:
+    "ZTL A: accesso e sosta sempre consentiti. ZTL B: accesso e sosta solo negli orari 08:00–11:00, 13:00–16:00 e 20:00–24:00, previa esposizione del contrassegno",
+  cost: "10€ (una tantum per rilascio tagliando)",
+  payment_method: "Pagamento presso sportello o secondo istruzioni comunali",
+  required_documents:
+    "Carta di circolazione, documento d’identità, modulo di richiesta",
+  requirements: "Veicolo con alimentazione esclusivamente elettrica (BEV)",
+  notes:
+    "Il contrassegno deve essere esposto in modo visibile sul parabrezza. È obbligatorio rispettare le fasce orarie in ZTL B. I parcheggi su strisce blu non sono agevolati.",
 }
 ];
