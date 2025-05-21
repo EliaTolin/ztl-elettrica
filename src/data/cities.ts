@@ -638,10 +638,10 @@ export const cities: City[] = [
     name: "Ferrara",
     region: "Emilia-Romagna",
     description:
-      "Parcheggio gratuito per veicoli elettrici su strisce blu previa richiesta del pass 'Mi muovo elettrico'",
+      "Parcheggio gratuito per veicoli elettrici su strisce blu previa richiesta del pass 'Mi muovo elettrico' esclusivamente per i residenti",
     request_url: "https://www.comune.ferrara.it/b/11833/mi-muovo-elettrico",
     needs_display: true,
-    free_parking: true,
+    free_parking: false,
     coordinates: [11.619, 44.835],
     duration: "2 anni",
     office_address:
