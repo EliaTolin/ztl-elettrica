@@ -1300,7 +1300,7 @@ export const cities: City[] = [
     name: "Imperia",
     region: "Liguria",
     description:
-      "Parcheggio gratuito su strisce blu per veicoli elettrici e ibridi plug-in con emissioni ≤ 50 g/km CO2, previa esposizione di apposito contrassegno verde",
+      "Parcheggio gratuito su strisce blu per veicoli elettrici e ibridi plug-in con emissioni ≤ 50 g/km CO2, previa esposizione libretto in cui si mostra l'alimentazione elettrica o plugin",
     request_url:
       "https://sportellotelematico.comune.imperia.it/action%3Ac_e290%3Aveicoli.elettrici",
     needs_display: true,
