@@ -44,6 +44,9 @@ const CityCard: React.FC<CityCardProps> = ({ city, onClose }) => {
             <CardTitle className="text-2xl">{city.name}</CardTitle>
             <span className="text-sm text-muted-foreground">{city.region}</span>
           </div>
+          <div className="flex items-center justify-between">
+            <span className="text-sm text-muted-foreground">{city.created_at}</span>
+          </div>
           <div className="flex gap-2 py-1">
             <Badge 
               variant="outline" 

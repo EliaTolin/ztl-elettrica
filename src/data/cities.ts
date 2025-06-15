@@ -21,4 +21,5 @@ export interface City {
   required_documents?: string;
   requirements?: string;
   notes?: string;
+  created_at?: string;
 }
