@@ -62,7 +62,6 @@ const MapView: React.FC<MapViewProps> = ({ onCitySelect, filteredCities }) => {
 
       map.current.on('error', (e) => {
         console.error("Mapbox error:", e);
-        // Corretto il tipo di errore per accedere a status
         if (e.error && typeof e.error === 'object' && 'status' in e.error && e.error.status === 401) {
           setMapError("Token di accesso Mapbox non valido. Inserisci un token valido per visualizzare la mappa.");
           setTokenConfirmed(false);
@@ -112,52 +111,12 @@ const MapView: React.FC<MapViewProps> = ({ onCitySelect, filteredCities }) => {
       });
 
       const marker = new mapboxgl.Marker(el)
-        .setLngLat(city.coordinates)
+        .setLngLat([city.longitude, city.latitude])
         .addTo(map.current!);
 
       markers.current[city.id] = marker;
     });
   }, [filteredCities, mapLoaded, onCitySelect, isMobile, selectedCityId]);
-
-  if (!tokenConfirmed || mapError) {
-    return (
-      <div className="flex flex-col items-center justify-center h-[50vh] gap-4 p-4 border rounded-lg">
-        <h2 className="text-xl font-bold">Token Mapbox Richiesto</h2>
-        
-        {mapError && (
-          <Alert variant="destructive" className="mb-4">
-            <AlertCircle className="h-4 w-4" />
-            <AlertTitle>Errore</AlertTitle>
-            <AlertDescription>{mapError}</AlertDescription>
-          </Alert>
-        )}
-        
-        <p className="text-center max-w-md">
-          Inserisci il tuo token pubblico Mapbox per visualizzare la mappa. Puoi ottenerne uno gratuitamente su{" "}
-          <a href="https://mapbox.com/" target="_blank" rel="noopener noreferrer" className="text-primary underline">
-            mapbox.com
-          </a>
-          .
-        </p>
-        <div className="w-full max-w-md">
-          <input
-            type="text"
-            value={mapboxTokenInput}
-            onChange={(e) => setMapboxTokenInput(e.target.value)}
-            placeholder="Inserisci il tuo token Mapbox"
-            className="w-full p-2 border rounded-md mb-2"
-          />
-          <Button 
-            className="w-full" 
-            onClick={() => setTokenConfirmed(true)}
-            disabled={!mapboxTokenInput}
-          >
-            Conferma Token
-          </Button>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="h-[calc(100vh-9rem)] md:h-[calc(100vh-7rem)] w-full rounded-lg overflow-hidden shadow-lg">
