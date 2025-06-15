@@ -296,7 +296,7 @@ export const cities: City[] = [
     cost: "Gratuito per veicoli elettrici",
     payment_method: "Non necessario",
     required_documents:
-      "Targa del veicolo, copia della carta di circolazione da inviare via email",
+      "Targa del veicolo, copia della carta di circolazione da inviare via email, necessario ritiro del permesso presso il Comune",
     requirements: "Veicolo con alimentazione esclusivamente elettrica (BEV)",
     notes:
       "Non è necessario esporre alcun contrassegno. L'autorizzazione è valida per 5 anni e viene gestita in modalità digitale dal Comune.",
@@ -348,7 +348,7 @@ export const cities: City[] = [
       "I parcheggi su strisce blu sono sempre a pagamento. È prevista la gratuità solo nelle strisce bianche, se presenti, all'interno della ZTL",
     ztl_access_description:
       "Accesso consentito con contrassegno. I residenti del centro hanno accesso gratuito alla propria zona (Nord o Sud). Per entrambe le zone è previsto un costo aggiuntivo. I non residenti possono acquistare autorizzazioni annuali",
-    cost: "Residenti ZTL: gratuito per una zona, circa €50/anno per entrambe. Non residenti: circa €50/anno per una zona, €100/anno per entrambe",
+    cost: "Residenti ZTL: gratuito per una zona, circa €50/anno per entrambe. Non residenti: circa 110€/anno per una zona, €100/anno per entrambe",
     payment_method: "Pagamento presso Pisamo o tramite portale, se abilitato",
     required_documents:
       "Carta di circolazione, documento d'identità, codice fiscale, modulo di richiesta",
@@ -976,7 +976,7 @@ export const cities: City[] = [
       "Sosta gratuita consentita nei parcheggi a pagamento di superficie gestiti da Parkar e Apcoa, **esclusa** l'area portuale (di competenza demaniale)",
     ztl_access_description:
       "Accesso consentito nelle ZTL dei quartieri Marina, Castello, Villanova e Stampace, previa richiesta del pass tramite SPID",
-    cost: "Gratuito",
+    cost: "5€ una tantum",
     payment_method: "Richiesta online tramite SPID",
     required_documents:
       "Carta di circolazione, documento d'identità, codice fiscale (da caricare digitalmente durante la richiesta)",
@@ -1612,5 +1612,61 @@ export const cities: City[] = [
   requirements: "Veicolo 100% elettrico (BEV)",
   notes:
     "Si consiglia di contattare il Comando per modalità aggiornate sulla richiesta del permesso di sosta gratuita.",
+},
+{
+  id: "crema",
+  name: "Crema",
+  region: "Lombardia",
+  description:
+    "Parcheggio gratuito su strisce blu per veicoli elettrici, previa esposizione visibile di un foglietto con la dicitura 'Full Electric'",
+  request_url: "https://www.comune.crema.cr.it",
+  needs_display: true,
+  free_parking: true,
+  coordinates: [9.6839, 45.3613],
+  duration: "Illimitata (fino a eventuale variazione del regolamento)",
+  office_address:
+    "Comune di Crema – Comando Polizia Locale, Piazza Duomo 25, 26013 Crema (CR)",
+  office_hours: "Lunedì–Venerdì 9:00–13:00",
+  phone: "+39 0373 8941",
+  email: "polizialocale@comune.crema.cr.it",
+  parking_zones_description:
+    "Parcheggio gratuito su strisce blu per veicoli elettrici, senza bisogno di richiesta formale; è sufficiente esporre sul cruscotto un foglietto con scritto 'Full Electric'",
+  ztl_access_description:
+    "Non specificato",
+  cost: "Gratuito",
+  payment_method: "Non necessario",
+  required_documents:
+    "Nessuno, ma si consiglia di tenere il libretto a bordo",
+  requirements: "Veicolo 100% elettrico (BEV)",
+  notes:
+    "Non è previsto un pass ufficiale; l’esposizione della dicitura 'Full Electric' è sufficiente per usufruire della gratuità della sosta su strisce blu.",
+},
+{
+  id: "imola",
+  name: "Imola",
+  region: "Emilia-Romagna",
+  description:
+    "Accesso ZTL e sosta gratuita su strisce blu per veicoli elettrici previa registrazione al servizio 'Mi Muovo Elettrico' gestito da Area Blu, anche per non residenti",
+  request_url: "https://www.areablu.com/servizi/mi-muovo-elettrico/", // da confermare
+  needs_display: true,
+  free_parking: true,
+  coordinates: [11.7167, 44.3555],
+  duration: "5 anni",
+  office_address:
+    "Area Blu – Sportello Mobilità, Via Mentana 10, 40026 Imola (BO)",
+  office_hours: "Lunedì–Venerdì 8:30–12:30; Martedì e Giovedì anche 14:30–16:30",
+  phone: "+39 0542 363600",
+  email: "info@areablu.com",
+  parking_zones_description:
+    "Sosta gratuita per veicoli elettrici su tutti gli stalli blu a pagamento previa registrazione a Area Blu",
+  ztl_access_description:
+    "Accesso ZTL consentito con pass 'Mi Muovo Elettrico' anche a non residenti",
+  cost: "Gratuito",
+  payment_method: "Registrazione tramite sito Area Blu o sportello",
+  required_documents:
+    "Carta di circolazione, documento d’identità, modulo richiesta Area Blu",
+  requirements: "Veicolo con alimentazione esclusivamente elettrica (BEV)",
+  notes:
+    "Il pass ha validità quinquennale. È consentito sia il transito in ZTL che la sosta gratuita, senza necessità di residenza nel Comune.",
 }
 ];
