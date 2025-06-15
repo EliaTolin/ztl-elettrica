@@ -41,18 +41,15 @@ const Header = () => {
               </Button>
             </a>
             <a
-              href="https://coff.ee/eliatolin"
+              href="https://www.buymeacoffee.com/eliatolin"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button 
-                variant="outline" 
-                size="sm"
-                aria-label="Sostienici" 
-                className="bg-primary/10 text-primary hover:bg-primary/20 transition-all duration-300 ease-in-out transform active:scale-95 flex items-center gap-2 px-3"
-              >
-                <Heart className="h-5 w-5" />
-              </Button>
+              <img 
+                src="https://img.buymeacoffee.com/button-api/?text=Sostieni il progetto&emoji=☕&slug=eliatolin&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" 
+                alt="Sostieni il progetto" 
+                className="h-[30px] w-auto sm:h-[40px] md:h-[50px]"
+              />
             </a>
             <Drawer>
               <DrawerTrigger asChild>
@@ -93,13 +90,16 @@ const Header = () => {
                       <span className="text-sm font-medium">Gruppo Telegram</span>
                     </a>
                     <a
-                      href="https://coff.ee/eliatolin"
+                      href="https://www.buymeacoffee.com/eliatolin"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 p-2 rounded-lg hover:bg-accent transition-colors"
                     >
-                      <Heart className="h-4 w-4" />
-                      <span className="text-sm font-medium">Sostienici</span>
+                      <img 
+                        src="https://img.buymeacoffee.com/button-api/?text=Sostieni il progetto&emoji=☕&slug=eliatolin&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" 
+                        alt="Sostieni il progetto" 
+                        className="h-[30px] w-auto"
+                      />
                     </a>
                   </div>
                 </nav>
@@ -135,15 +135,16 @@ const Header = () => {
               </Button>
             </a>
             <a
-              href="https://coff.ee/eliatolin"
+              href="https://www.buymeacoffee.com/eliatolin"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-transform duration-200 hover:scale-105"
             >
-              <Button variant="outline" size="sm" className="gap-1 transition-all duration-200">
-                <Heart className="h-4 w-4" />
-                <span>Sostienici</span>
-              </Button>
+              <img 
+                src="https://img.buymeacoffee.com/button-api/?text=Sostieni il progetto&emoji=☕&slug=eliatolin&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" 
+                alt="Sostieni il progetto" 
+                className="h-[40px] w-auto"
+              />
             </a>
           </nav>
         )}
