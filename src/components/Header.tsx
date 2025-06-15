@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
-import { Map, Plus, Menu, MessageCircle } from 'lucide-react';
+import { Map, Plus, Menu, MessageCircle, Heart } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import {
   Drawer,
@@ -38,6 +38,20 @@ const Header = () => {
                 className="bg-primary/10 text-primary hover:bg-primary/20 transition-all duration-300 ease-in-out transform active:scale-95 flex items-center gap-2 px-3"
               >
                 <TelegramIcon className="h-5 w-5" color="#0088cc" />
+              </Button>
+            </a>
+            <a
+              href="https://coff.ee/eliatolin"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button 
+                variant="outline" 
+                size="sm"
+                aria-label="Sostienici" 
+                className="bg-primary/10 text-primary hover:bg-primary/20 transition-all duration-300 ease-in-out transform active:scale-95 flex items-center gap-2 px-3"
+              >
+                <Heart className="h-5 w-5" />
               </Button>
             </a>
             <Drawer>
@@ -78,6 +92,15 @@ const Header = () => {
                       <TelegramIcon className="h-4 w-4" color="#0088cc" />
                       <span className="text-sm font-medium">Gruppo Telegram</span>
                     </a>
+                    <a
+                      href="https://coff.ee/eliatolin"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 p-2 rounded-lg hover:bg-accent transition-colors"
+                    >
+                      <Heart className="h-4 w-4" />
+                      <span className="text-sm font-medium">Sostienici</span>
+                    </a>
                   </div>
                 </nav>
               </DrawerContent>
@@ -109,6 +132,17 @@ const Header = () => {
               <Button variant="outline" size="sm" className="gap-1 transition-all duration-200">
                 <TelegramIcon className="h-4 w-4" color="#0088cc" />
                 <span>Gruppo Telegram</span>
+              </Button>
+            </a>
+            <a
+              href="https://coff.ee/eliatolin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-transform duration-200 hover:scale-105"
+            >
+              <Button variant="outline" size="sm" className="gap-1 transition-all duration-200">
+                <Heart className="h-4 w-4" />
+                <span>Sostienici</span>
               </Button>
             </a>
           </nav>
