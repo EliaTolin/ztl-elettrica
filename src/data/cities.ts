@@ -146,7 +146,7 @@ export const cities: City[] = [
     needs_display: false,
     free_parking: false,
     coordinates: [7.6868, 45.0703],
-    duration: "Permanente per veicoli elettrici",
+    duration: "2 anni",
     office_address: "GTT - Corso Turati 19/6, 10128 Torino",
     office_hours:
       "Lunedì-Venerdì 8:30-12:30; Martedì e Giovedì anche 14:00-17:00",
@@ -1556,5 +1556,61 @@ export const cities: City[] = [
   requirements: "Veicolo con alimentazione esclusivamente elettrica (BEV)",
   notes:
     "Il contrassegno deve essere esposto in modo visibile sul parabrezza. È obbligatorio rispettare le fasce orarie in ZTL B. I parcheggi su strisce blu non sono agevolati.",
+},
+{
+  id: "foggia",
+  name: "Foggia",
+  region: "Puglia",
+  description:
+    "Parcheggio gratuito su strisce blu per veicoli elettrici previa registrazione tramite il portale BRAV",
+  request_url: "https://pass.brav.it/Foggia/FrontOffice/Home/Index",
+  needs_display: true,
+  free_parking: true,
+  coordinates: [15.5666, 41.4584],
+  duration: "1 anno, rinnovabile",
+  office_address:
+    "Comune di Foggia – Ufficio Mobilità, Piazza XX Settembre 1, 71121 Foggia",
+  office_hours: "Lunedì–Venerdì 9:00–13:00; Martedì e Giovedì anche 15:30–17:30",
+  phone: "+39 0881 7911",
+  email: "infososta.foggia@gpsparking.it",
+  parking_zones_description:
+    "Sosta gratuita consentita per veicoli elettrici in tutte le aree a pagamento previa registrazione targa e libretto sul portale BRAV",
+  ztl_access_description:
+    "Non previsto",
+  cost: "Gratuito",
+  payment_method: "Registrazione online",
+  required_documents:
+    "Carta di circolazione, documento d’identità",
+  requirements: "Veicolo 100% elettrico (BEV)",
+  notes:
+    "La targa deve essere correttamente registrata e autorizzata tramite il sistema GPS Parking per evitare sanzioni.",
+},
+{
+  id: "san-severo",
+  name: "San Severo",
+  region: "Puglia",
+  description:
+    "Sosta gratuita su strisce blu per veicoli elettrici. Non sono previste agevolazioni ZTL",
+  request_url: "https://www.comune.san-severo.fg.it/homepage.html",
+  needs_display: true,
+  free_parking: true,
+  coordinates: [15.3795, 41.6857],
+  duration: "1 anno",
+  office_address:
+    "Comune di San Severo – Comando Polizia Locale, Piazza Municipio 1, 71016 San Severo (FG)",
+  office_hours: "Lunedì–Venerdì 9:00–13:00",
+  phone: "+39 0882 3391",
+  email: "uff.comandopl@pec.comune.san-severo.fg.it",
+  parking_zones_description:
+    "Parcheggio gratuito per veicoli elettrici nelle strisce blu previa autorizzazione presso il Comando di Polizia Locale",
+  ztl_access_description:
+    "Non previsto",
+  cost: "Gratuito",
+  payment_method: "Non necessario",
+  required_documents:
+    "Carta di circolazione, documento d’identità",
+  requirements: "Veicolo 100% elettrico (BEV)",
+  notes:
+    "Si consiglia di contattare il Comando per modalità aggiornate sulla richiesta del permesso di sosta gratuita.",
 }
 ];
