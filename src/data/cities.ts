@@ -120,11 +120,11 @@ export const cities: City[] = [
     coordinates: [11.3426, 44.4949],
     duration: "5 anni",
     office_address:
-      "Sportello Mobilità Urbana, Piazza Liber Paradisus 10, 40129 Bologna",
+      "Sportelli Bomob: Via Calori 4/E e Via Gobetti 41, 40122 Bologna",
     office_hours:
       "Lunedì-Venerdì 8:30-13:00; Martedì e Giovedì anche 15:00-17:00",
     phone: "+39 051 2193042",
-    email: "contrassegni@comune.bologna.it",
+    email: "contrassegni@bomob.it",
     parking_zones_description:
       "I veicoli elettrici possono parcheggiare gratuitamente nelle strisce blu",
     ztl_access_description:
@@ -134,7 +134,7 @@ export const cities: City[] = [
     required_documents: "Carta di circolazione, documento d'identità",
     requirements: "Veicolo con alimentazione esclusivamente elettrica",
     notes:
-      "Necessario registrare la targa ed esporre il contrassegno 'VEICOLO ELETTRICO'",
+      "Si consiglia di richiedere il contrassegno preventivamente via email per evitare lunghe attese allo sportello. Il ritiro va comunque effettuato di persona presso lo sportello di Via Gobetti.",
   },
   {
     id: "torino",
