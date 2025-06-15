@@ -46,7 +46,7 @@ const CityCard: React.FC<CityCardProps> = ({ city, onClose }) => {
           </div>
           <div className="flex items-center justify-between">
             <span className="text-sm text-muted-foreground">
-              Aggiornato il: {city.created_at ? new Date(city.created_at).toLocaleDateString('it-IT', {
+              Aggiornato il: {city.updated_at ? new Date(city.updated_at).toLocaleDateString('it-IT', {
                 year: 'numeric',
                 month: 'long', 
                 day: 'numeric',
