@@ -1668,5 +1668,32 @@ export const cities: City[] = [
   requirements: "Veicolo con alimentazione esclusivamente elettrica (BEV)",
   notes:
     "Il pass ha validità quinquennale. È consentito sia il transito in ZTL che la sosta gratuita, senza necessità di residenza nel Comune.",
+},{
+  id: "civitanova-marche",
+  name: "Civitanova Marche",
+  region: "Marche",
+  description:
+    "Sosta gratuita nei parcheggi a pagamento per veicoli elettrici. È necessario effettuare la procedura presso le colonnine come per le altre auto, ma senza effettuare il pagamento",
+  request_url:
+    "https://servizi.comune.civitanova.mc.it/civitas/index.php/parcheggi",
+  needs_display: true,
+  free_parking: true,
+  coordinates: [13.7334, 43.3098],
+  duration: "Giornaliera tramite ticket",
+  office_address:
+    "Comune di Civitanova Marche – Comando Polizia Locale, Piazza XX Settembre 93, 62012 Civitanova Marche (MC)",
+  office_hours: "Lunedì–Venerdì 9:00–13:00",
+  phone: "+39 0733 8221",
+  parking_zones_description:
+    "Sosta gratuita consentita nei parcheggi a pagamento per veicoli elettrici, con emissione del biglietto gratuito alle colonnine",
+  ztl_access_description:
+    "Non specificato o non previsto",
+  cost: "Gratuito",
+  payment_method: "Procedura presso parcometri (ticket gratuito)",
+  required_documents:
+    "Nessun documento richiesto, è sufficiente stampare e esporre il biglietto gratuito",
+  requirements: "Veicolo esclusivamente elettrico (BEV)",
+  notes:
+    "La gratuità si ottiene seguendo la procedura standard al parcometro, che rilascerà il biglietto gratuito da esporre sul cruscotto. Nessuna autorizzazione preventiva necessaria.",
 }
 ];
