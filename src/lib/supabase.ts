@@ -22,4 +22,19 @@ try {
   throw new Error('Failed to create Supabase client. Please check your configuration.');
 }
 
+export const getCityBySlug = async (slug: string) => {
+  const { data, error } = await supabase
+    .from("ztl_electric_cities")
+    .select("*")
+    .eq("id", slug)
+    .single();
+
+  if (error) {
+    console.error("Error fetching city:", error);
+    return null;
+  }
+
+  return data;
+};
+
 export { supabase }; 
