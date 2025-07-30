@@ -14,7 +14,7 @@ const CityPage = () => {
 
   const { data: city, isLoading } = useQuery({
     queryKey: ["city", slug],
-    queryFn: () => getCityBySlug(slug!),
+    queryFn: () => getCityBySlug(slug!.toLowerCase().replace(/\s+/g, '-')),
     enabled: !!slug,
   });
 
