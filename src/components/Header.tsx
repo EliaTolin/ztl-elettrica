@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
-import { Map, Plus, Menu, MessageCircle, Heart } from 'lucide-react';
+import { Map, Plus, Menu, MessageCircle, Heart, List } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import {
   Drawer,
@@ -72,6 +72,10 @@ const Header = () => {
                       <Map className="h-4 w-4" />
                       <span className="text-sm font-medium">Mappa</span>
                     </Link>
+                    <Link to="/citta" className="flex items-center gap-2 p-2 rounded-lg hover:bg-accent transition-colors">
+                      <List className="h-4 w-4" />
+                      <span className="text-sm font-medium">Città</span>
+                    </Link>
                     <Link to="/richiedi-zona" className="flex items-center gap-2 p-2 rounded-lg hover:bg-accent transition-colors">
                       <Plus className="h-4 w-4" />
                       <span className="text-sm font-medium">Suggerisci Zona</span>
@@ -110,6 +114,9 @@ const Header = () => {
           <nav className="flex items-center gap-4">
             <Link to="/" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200">
               Mappa
+            </Link>
+            <Link to="/citta" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200">
+              Città
             </Link>
             <Link to="/richiedi-zona" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-transform duration-200 hover:scale-105">
               <Button variant="outline" size="sm" className="gap-1 transition-all duration-200">

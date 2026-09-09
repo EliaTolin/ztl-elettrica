@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "sosta-gratuita-auto-elettriche",
+    "layout": "list",
+    "filter": {
+      "field": "free_parking",
+      "equals": true
+    },
+    "navLabel": "Sosta gratuita",
+    "h1": "Dove parcheggiare gratis con l'auto elettrica",
+    "title": "Sosta gratuita per auto elettriche: le città italiane",
+    "description": "Elenco dei comuni italiani dove i veicoli elettrici sostano gratuitamente. Zone, condizioni e limiti, città per città.",
+    "intro": "La sosta gratuita per i veicoli elettrici non è una regola nazionale: ogni comune decide per conto proprio, e in molti casi la gratuità vale solo in alcune zone o entro un limite di tempo. Queste sono le città in cui risulta prevista una forma di sosta agevolata, con le condizioni specifiche di ciascuna.",
+    "emptyLabel": "Nessuna città corrisponde a questo criterio.",
+    "detailField": "parking_zones_description",
+    "detailLabel": "Zone e condizioni"
+  },
+  {
+    "slug": "ztl-senza-permesso-auto-elettriche",
+    "layout": "list",
+    "filter": {
+      "field": "needs_display",
+      "equals": false
+    },
+    "navLabel": "Accesso senza permesso",
+    "h1": "Dove entrare in ZTL con l'auto elettrica senza permesso",
+    "title": "ZTL senza permesso per auto elettriche: le città italiane",
+    "description": "I comuni italiani in cui i veicoli elettrici accedono alla ZTL senza dover richiedere o esporre un contrassegno.",
+    "intro": "Nella maggior parte dei comuni italiani anche i veicoli elettrici devono richiedere un'autorizzazione ed esporre un contrassegno per entrare in ZTL. In una minoranza di città l'accesso è invece libero, senza pratiche preventive. Queste sono le città in cui risulta non necessario alcun contrassegno.",
+    "emptyLabel": "Nessuna città corrisponde a questo criterio.",
+    "detailField": "ztl_access_description",
+    "detailLabel": "Come funziona l'accesso"
+  },
+  {
+    "slug": "costi-permesso-ztl-auto-elettriche",
+    "layout": "cost-table",
+    "filter": {
+      "field": "cost",
+      "notEmpty": true
+    },
+    "navLabel": "Costi del permesso",
+    "h1": "Quanto costa il permesso ZTL per un'auto elettrica",
+    "title": "Costi del permesso ZTL per auto elettriche: confronto per città",
+    "description": "Confronto dei costi del permesso ZTL per veicoli elettrici nei comuni italiani: dal rilascio gratuito alle tariffe annuali.",
+    "intro": "Il costo del permesso ZTL per un veicolo elettrico varia enormemente da comune a comune: si va dal rilascio completamente gratuito alla sola marca da bollo, fino a tariffe annuali di diverse centinaia di euro. Questo confronto mette in fila i costi dichiarati da ciascun comune.",
+    "emptyLabel": "Nessun costo disponibile."
+  },
+  {
+    "slug": "come-funziona-una-ztl",
+    "layout": "article",
+    "filter": {
+      "field": "__none__",
+      "equals": true
+    },
+    "navLabel": "Come funziona una ZTL",
+    "h1": "Come funziona una ZTL in Italia",
+    "title": "Come funziona una ZTL: regole, permessi e sanzioni",
+    "description": "Cos'è una zona a traffico limitato, chi ne stabilisce le regole, perché per i veicoli elettrici non esiste una norma nazionale e cosa comporta l'accesso senza titolo.",
+    "intro": "Le regole delle ZTL cambiano da comune a comune, ma il quadro entro cui ogni comune decide è lo stesso in tutta Italia. Conoscerlo aiuta a leggere correttamente le schede delle singole città.",
+    "emptyLabel": ""
+  }
+]

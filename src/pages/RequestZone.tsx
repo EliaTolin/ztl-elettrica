@@ -2,10 +2,24 @@
 import React from 'react';
 import Header from '../components/Header';
 import AddZoneForm from '../components/AddZoneForm';
+import Seo, { SITE_URL } from '@/components/Seo';
 
 const RequestZone = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
+      <Seo
+        title="Aggiungi una città | ZTL Elettrica Italia"
+        description="Proponi una nuova città da aggiungere alla mappa delle ZTL per auto elettriche. Il progetto cresce con le segnalazioni della community."
+        path="/richiedi-zona"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+            { "@type": "ListItem", position: 2, name: "Aggiungi una città", item: `${SITE_URL}/richiedi-zona` },
+          ],
+        }}
+      />
       <Header />
       
       <main className="flex-1 container mx-auto py-4">

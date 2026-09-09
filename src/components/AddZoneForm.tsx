@@ -39,9 +39,12 @@ const AddZoneForm = () => {
   return (
     <div className="max-w-xl mx-auto p-4 md:p-6 bg-white rounded-lg shadow-sm border my-8">
       <div className="mb-6 text-center">
-        <h1 className="text-2xl font-bold tracking-tight">Suggerisci una nuova zona da inserire</h1>
+        <h1 className="text-2xl font-bold tracking-tight">
+          Aggiungi la tua città
+        </h1>
         <p className="text-muted-foreground mt-2">
-          Compila il modulo per richiedere l'aggiunta in ZTL Elettrica di una nuova zona ZTL per veicoli elettrici
+          Bastano il nome della città, la regione e due righe su come funziona
+          l'accesso. Tutto il resto è facoltativo: se non lo sai, lo verifichiamo noi.
         </p>
       </div>
 

@@ -1,0 +1,27 @@
+{
+  "heading": "Come funziona una ZTL in Italia",
+  "intro": "Le regole qui sopra valgono per questo comune. Il quadro generale entro cui ogni comune decide è però lo stesso in tutta Italia, ed è utile conoscerlo prima di mettersi in strada.",
+  "sections": [
+    {
+      "heading": "Che cos'è una zona a traffico limitato",
+      "body": "Il Codice della Strada definisce la zona a traffico limitato come un'area in cui l'accesso e la circolazione dei veicoli sono limitati a determinate fasce orarie oppure a particolari categorie di utenti e di veicoli. Non è quindi un divieto assoluto: è un accesso condizionato, e le condizioni le stabilisce il singolo comune con un proprio atto amministrativo. Questo spiega perché due città vicine possano avere regole opposte per lo stesso veicolo."
+    },
+    {
+      "heading": "ZTL e area pedonale non sono la stessa cosa",
+      "body": "L'area pedonale è una categoria distinta: è riservata ai pedoni, e la circolazione dei veicoli vi è di norma esclusa salvo deroghe specifiche. Un permesso che consente di entrare in ZTL non autorizza automaticamente ad accedere a un'area pedonale. Diverse città estendono l'agevolazione ai veicoli elettrici solo sulla ZTL, lasciando le aree pedonali fuori: dove questa distinzione esiste, la trovi indicata nella scheda qui sopra."
+    },
+    {
+      "heading": "Per i veicoli elettrici non esiste una regola nazionale",
+      "body": "Non c'è alcuna norma statale che garantisca ai veicoli elettrici l'ingresso libero nelle ZTL italiane. L'agevolazione, dove c'è, nasce da una scelta del singolo comune e può essere subordinata alla registrazione della targa, al rilascio di un contrassegno, al pagamento di un importo o alla residenza. Può anche essere limitata nel tempo o revocata. Sui comuni raccolti in questo sito, la maggioranza richiede comunque una qualche forma di autorizzazione preventiva."
+    },
+    {
+      "heading": "Cosa succede se si entra senza titolo",
+      "body": "Gli accessi sono in genere controllati da varchi elettronici che leggono la targa in automatico. L'ingresso senza autorizzazione comporta una sanzione amministrativa pecuniaria, e il verbale può arrivare anche a settimane di distanza dal transito. Poiché ogni varco genera un rilevamento autonomo, più ingressi possono tradursi in più sanzioni distinte. Per questo conviene verificare la propria posizione prima di accedere, non dopo."
+    },
+    {
+      "heading": "Come verificare prima di partire",
+      "body": "Le regole ZTL cambiano per delibera comunale, spesso senza clamore e con effetto immediato. I dati raccolti in questa pagina vengono aggiornati dalla community e verificati sulle fonti comunali, ma non sostituiscono la fonte ufficiale: prima di accedere, controlla sul sito del Comune, il cui link trovi qui sopra. Se noti un dato non aggiornato, segnalacelo: la correzione aiuta anche chi arriva dopo di te."
+    }
+  ],
+  "teaser": "Per i veicoli elettrici non esiste una norma nazionale che garantisca l'ingresso in ZTL: ogni comune decide con un proprio atto, e le regole possono cambiare senza preavviso. Gli accessi sono controllati da varchi elettronici e il verbale può arrivare settimane dopo il transito."
+}

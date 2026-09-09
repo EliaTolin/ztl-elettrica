@@ -4,9 +4,23 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Mail, MessageCircle, Map, Github, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import TelegramIcon from '@/components/icons/TelegramIcon';
+import Seo, { SITE_URL } from '@/components/Seo';
 const Contacts = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <Seo
+        title="Contatti | ZTL Elettrica Italia"
+        description="Contatta ZTL Elettrica Italia per segnalare un aggiornamento, correggere un dato o proporre una nuova città."
+        path="/contatti"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+            { "@type": "ListItem", position: 2, name: "Contatti", item: `${SITE_URL}/contatti` },
+          ],
+        }}
+      />
       <Header />
       
       <main className="flex-1 container py-8">

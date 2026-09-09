@@ -42,8 +42,10 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/favicon.ico">
     
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://ztlelettrica.it/" />
+    <!-- Nessun URL canonico statico qui: react-helmet-async ne aggiunge uno
+         proprio senza rimuovere quello preesistente, e i due finirebbero in
+         conflitto nel DOM. Lo impostano il componente Seo (lato client) e
+         scripts/prerender.mjs (nell'HTML statico servito ai crawler). -->
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -52,12 +54,8 @@
       "@type": "WebSite",
       "name": "ZTL Elettrica Italia",
       "url": "https://ztlelettrica.it",
-      "description": "Trova informazioni su ZTL e parcheggi per auto elettriche in tutte le città italiane. Accesso, costi, permessi e mappe interattive per veicoli elettrici.",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://ztlelettrica.it/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "inLanguage": "it-IT",
+      "description": "Trova informazioni su ZTL e parcheggi per auto elettriche in tutte le città italiane. Accesso, costi, permessi e mappe interattive per veicoli elettrici."
     }
     </script>
     <script type="application/ld+json">

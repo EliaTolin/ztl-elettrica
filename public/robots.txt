@@ -1,4 +1,25 @@
 # https://www.robotstxt.org/robotstxt.html
+
+# Crawler dei motori di risposta: alimentano citazioni con link alla fonte.
+# Per una guida normativa pubblica non c'è motivo di bloccarli.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 User-agent: *
 Allow: /
 

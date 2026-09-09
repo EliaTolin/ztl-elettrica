@@ -8,6 +8,8 @@ import { ArrowLeft, MapPin, Phone, Mail, Clock, Car, Euro, FileText, ExternalLin
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
+import Seo, { SITE_URL, SITE_NAME } from "@/components/Seo";
+import ZtlExplainer from "@/components/ZtlExplainer";
 
 const CityPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -73,61 +75,107 @@ const CityPage = () => {
     );
   }
 
-  // Generate structured data for SEO
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Place",
-    "name": `ZTL Elettrica ${city.name}`,
-    "description": city.description,
-    "address": {
-      "@type": "PostalAddress",
-      "addressRegion": city.region,
-      "addressCountry": "IT"
-    },
-    "url": `${window.location.origin}/citta/${slug}`,
-    "mainEntity": {
-      "@type": "Service",
-      "name": `Servizio ZTL Elettrica ${city.name}`,
-      "description": `Informazioni e regolamenti per l'accesso alla ZTL di ${city.name} con veicoli elettrici`,
-      "provider": {
-        "@type": "Organization",
-        "name": "Comune di " + city.name
-      }
-    }
-  };
+  const canonicalPath = `/citta/${slug}`;
+  const modified = city.updated_at || city.created_at;
 
-  // Generate meta description
-  const metaDescription = `Scopri tutte le informazioni sulla ZTL Elettrica di ${city.name}. ${
-    !city.needs_display ? 'Accesso automatico' : 'Richiede permesso'
-  } per veicoli elettrici. ${city.description?.substring(0, 100)}...`;
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+        { "@type": "ListItem", position: 2, name: "Città", item: `${SITE_URL}/citta` },
+        { "@type": "ListItem", position: 3, name: city.name, item: `${SITE_URL}${canonicalPath}` },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": `${SITE_URL}${canonicalPath}`,
+      url: `${SITE_URL}${canonicalPath}`,
+      name: `ZTL ${city.name} e auto elettriche: regole di accesso e sosta`,
+      description: city.description,
+      inLanguage: "it-IT",
+      ...(modified && { dateModified: new Date(modified).toISOString() }),
+      ...(city.created_at && { datePublished: new Date(city.created_at).toISOString() }),
+      // La PAGINA è scritta e curata dal sito. Il SERVIZIO descritto è invece
+      // erogato dal Comune: le due attribuzioni vanno tenute distinte, altrimenti
+      // ci si arroga un'autorità istituzionale che non si ha.
+      author: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+      publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+      isPartOf: { "@type": "WebSite", name: SITE_NAME, url: SITE_URL },
+      ...(city.request_url && { citation: city.request_url }),
+      mainEntity: {
+        "@type": "GovernmentService",
+        name: `Accesso ZTL per veicoli elettrici a ${city.name}`,
+        serviceType: "Accesso e permessi ZTL per veicoli elettrici",
+        description:
+          city.ztl_access_description ||
+          city.description ||
+          `Regolamento ZTL per veicoli elettrici a ${city.name}.`,
+        areaServed: {
+          "@type": "City",
+          name: city.name,
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: city.name,
+            addressRegion: city.region,
+            addressCountry: "IT",
+          },
+        },
+        // GovernmentOffice richiede un luogo fisico: senza indirizzo degradiamo
+        // a GovernmentOrganization invece di emettere un'entità incompleta.
+        provider: {
+          "@type": city.office_address ? "GovernmentOffice" : "GovernmentOrganization",
+          name: `Comune di ${city.name}`,
+          ...(city.request_url && { url: city.request_url }),
+          ...(city.phone && { telephone: city.phone }),
+          ...(city.email && { email: city.email }),
+          ...(city.office_address && {
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: city.office_address,
+              addressLocality: city.name,
+              addressRegion: city.region,
+              addressCountry: "IT",
+            },
+          }),
+        },
+        ...(city.request_url && { termsOfService: city.request_url }),
+        ...(city.cost && {
+          // cost e payment_method sono testo libero inserito dalla community:
+          // restano descrizione, non price/priceCurrency, che richiederebbero
+          // un parsing degli importi che non possiamo garantire.
+          offers: {
+            "@type": "Offer",
+            description: [city.cost, city.payment_method].filter(Boolean).join(" — "),
+            ...(city.request_url && { url: city.request_url }),
+          },
+        }),
+      },
+    },
+  ];
+
+  // Anticipa in SERP la risposta più cercata: serve o no il permesso.
+  const verdict = city.needs_display ? "serve il permesso" : "accesso libero";
+  const pageTitle = `ZTL ${city.name} auto elettriche: ${verdict}, costi e regole | ${SITE_NAME}`;
+  const metaDescription = [
+    `ZTL ${city.name} e auto elettriche: ${city.needs_display ? "serve esporre il contrassegno" : "accesso senza permesso"}, ${city.free_parking ? "sosta gratuita" : "sosta a pagamento"}.`,
+    city.cost ? `Costo: ${city.cost}.` : "",
+    "Documenti, orari dell'ufficio comunale e contatti.",
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .slice(0, 158);
 
   return (
     <>
-      <Helmet>
-        <title>{`ZTL Elettrica ${city.name} | Informazioni e Regolamenti`}</title>
-        <meta name="description" content={metaDescription} />
-        <meta name="keywords" content={`ZTL elettrica ${city.name}, auto elettriche ${city.name}, parcheggi elettrici ${city.name}, permessi ZTL ${city.name}, mobilità sostenibile ${city.name}`} />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content={`ZTL Elettrica ${city.name} | Informazioni e Regolamenti`} />
-        <meta property="og:description" content={metaDescription} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={`${window.location.origin}/citta/${slug}`} />
-        <meta property="og:locale" content="it_IT" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`ZTL Elettrica ${city.name}`} />
-        <meta name="twitter:description" content={metaDescription} />
-        
-        {/* Canonical URL */}
-        <link rel="canonical" href={`${window.location.origin}/citta/${slug}`} />
-        
-        {/* Structured Data */}
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      </Helmet>
+      <Seo
+        title={pageTitle}
+        description={metaDescription}
+        path={canonicalPath}
+        jsonLd={structuredData}
+      />
 
       <div className="flex flex-col min-h-screen bg-gray-50">
         <Header />
@@ -408,6 +456,54 @@ const CityPage = () => {
               </Card>
             </div>
           </div>
+
+          <ZtlExplainer />
+
+          {/* Provenienza del dato: su un tema dove un'informazione sbagliata
+              costa una multa, la data e la fonte sono parte del contenuto. */}
+          <section className="mt-8 rounded-lg border bg-white p-6">
+            <h2 className="text-lg font-semibold mb-3">Affidabilità di questi dati</h2>
+            {modified && (
+              <p className="text-sm text-muted-foreground mb-2">
+                Ultimo aggiornamento:{" "}
+                <time dateTime={new Date(modified).toISOString().slice(0, 10)}>
+                  {new Date(modified).toLocaleDateString("it-IT", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                  })}
+                </time>
+              </p>
+            )}
+            <p className="text-sm text-muted-foreground mb-4">
+              I dati sono raccolti dalla community e verificati sulle fonti comunali.
+              Le regole ZTL cambiano per delibera: prima di accedere verifica sempre
+              sul sito ufficiale del Comune.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              {city.request_url && (
+                <Button variant="outline" size="sm" asChild>
+                  <a href={city.request_url} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2 h-3.5 w-3.5" />
+                    Fonte ufficiale del Comune
+                  </a>
+                </Button>
+              )}
+              <Button variant="outline" size="sm" asChild>
+                <a
+                  href={`mailto:info@auroradigital.it?subject=${encodeURIComponent(
+                    `Correzione dati ZTL ${city.name}`,
+                  )}`}
+                >
+                  <AlertCircle className="mr-2 h-3.5 w-3.5" />
+                  Segnala un errore
+                </a>
+              </Button>
+              <Button variant="outline" size="sm" asChild>
+                <Link to="/citta">Vedi tutte le città</Link>
+              </Button>
+            </div>
+          </section>
         </main>
       </div>
     </>

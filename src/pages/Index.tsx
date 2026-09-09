@@ -1,4 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { GUIDES } from '@/lib/guides';
 import { City } from '../data/cities';
 import MapView from '../components/MapView';
 import CityCard from '../components/CityCard';
@@ -138,7 +140,31 @@ const Index = () => {
           </div>
         ) : (
           <>
-            <FilterBar 
+            <h1 className="text-2xl md:text-3xl font-bold mb-2">
+              ZTL e auto elettriche: regole di accesso in {cities.length || 65} città italiane
+            </h1>
+            <p className="text-muted-foreground mb-6 max-w-3xl">
+              Ogni comune decide autonomamente se i veicoli elettrici possono accedere
+              alla ZTL, se serve un contrassegno e se la sosta è gratuita.{" "}
+              <Link to="/citta" className="text-primary underline underline-offset-2">
+                Consulta l'elenco completo delle città
+              </Link>
+              .
+            </p>
+
+            <nav aria-label="Guide" className="flex flex-wrap gap-2 mb-6">
+              {GUIDES.map((g) => (
+                <Link
+                  key={g.slug}
+                  to={`/${g.slug}`}
+                  className="rounded-full border bg-white px-3 py-1.5 text-sm hover:border-primary transition-colors"
+                >
+                  {g.navLabel}
+                </Link>
+              ))}
+            </nav>
+
+            <FilterBar
               autoAccessOnly={autoAccessOnly}
               setAutoAccessOnly={setAutoAccessOnly}
               freeParkingOnly={freeParkingOnly}

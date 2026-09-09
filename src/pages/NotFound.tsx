@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import Seo from "@/components/Seo";
 
 const NotFound = () => {
   const location = useLocation();
@@ -12,6 +13,15 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
+    <>
+      {/* Netlify serve la SPA con status 200 su qualunque path: senza noindex
+          ogni URL inesistente sarebbe indicizzabile come copia della home. */}
+      <Seo
+        title="Pagina non trovata | ZTL Elettrica Italia"
+        description="La pagina richiesta non esiste."
+        path={location.pathname}
+        noindex
+      />
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-50 to-purple-50">
       <div className="text-center p-8 bg-white rounded-xl shadow-xl">
         <div className="text-9xl font-bold mb-4 animate-bounce">
@@ -33,6 +43,7 @@ const NotFound = () => {
         </a>
       </div>
     </div>
+    </>
   );
 };
 
