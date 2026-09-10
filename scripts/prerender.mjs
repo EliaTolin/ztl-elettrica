@@ -13,6 +13,12 @@
  *
  * Netlify serve un file statico esistente PRIMA di applicare il redirect
  * catch-all di netlify.toml (che non è `force`), quindi questi file vincono.
+ *
+ * I file sono scritti come `<slug>.html`, non `<slug>/index.html`: una cartella
+ * con index.html fa rispondere a Netlify un 301 verso la variante con slash
+ * finale, e ogni URL della sitemap costerebbe un hop di redirect con il
+ * canonical puntato a un indirizzo che redirige. Con il file .html l'URL senza
+ * slash risponde 200 direttamente.
  * React monta con createRoot().render(), che sostituisce il contenuto di #root:
  * nessun mismatch di hydration, solo il markup statico rimpiazzato dall'app.
  */
@@ -285,7 +291,7 @@ const cities = await fetchCities();
 if (cities.length === 0) throw new Error("Nessuna città da Supabase: prerendering interrotto.");
 
 for (const city of cities) {
-  const out = resolve(DIST, "citta", city.id, "index.html");
+  const out = resolve(DIST, "citta", `${city.id}.html`);
   mkdirSync(dirname(out), { recursive: true });
   writeFileSync(
     out,
@@ -322,7 +328,7 @@ const indexBody = `
       .join("\n    ")}
   `;
 
-const indexOut = resolve(DIST, "citta", "index.html");
+const indexOut = resolve(DIST, "citta.html");
 mkdirSync(dirname(indexOut), { recursive: true });
 writeFileSync(
   indexOut,
@@ -432,7 +438,7 @@ for (const guide of GUIDES) {
     throw new Error(`Guida "${guide.slug}": nessuna città corrisponde al filtro, pagina non generata.`);
   }
 
-  const out = resolve(DIST, guide.slug, "index.html");
+  const out = resolve(DIST, `${guide.slug}.html`);
   mkdirSync(dirname(out), { recursive: true });
   writeFileSync(
     out,
@@ -486,7 +492,7 @@ for (const guide of GUIDES) {
 const STATIC = [
   {
     path: "/contatti",
-    file: "contatti/index.html",
+    file: "contatti.html",
     title: `Contatti | ${SITE_NAME}`,
     description:
       "Contatta ZTL Elettrica Italia per segnalare un aggiornamento, correggere un dato o proporre una nuova città.",
@@ -498,7 +504,7 @@ const STATIC = [
   },
   {
     path: "/richiedi-zona",
-    file: "richiedi-zona/index.html",
+    file: "richiedi-zona.html",
     title: `Aggiungi una città | ${SITE_NAME}`,
     description:
       "Proponi una nuova città da aggiungere alla mappa delle ZTL per auto elettriche. Il progetto cresce con le segnalazioni della community.",
