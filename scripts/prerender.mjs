@@ -247,29 +247,42 @@ function render(template, { title, description, canonical, jsonLd, body }) {
 
   // Sostituisce i valori statici della home, che altrimenti resterebbero
   // identici su tutte le pagine per i crawler senza JS.
+  // data-rh="true" su ogni tag che anche il componente Seo emette: senza,
+  // react-helmet-async ne aggiunge una seconda copia al mount e il DOM che
+  // Google indicizza contiene due canonical, due robots, due og:* ciascuno.
   html = html.replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(title)}</title>`);
   html = html.replace(
-    /<meta name="description"[^>]*>/,
-    `<meta name="description" content="${esc(description)}" />`,
+    /<meta data-rh="true" name="description"[^>]*>/,
+    `<meta data-rh="true" name="description" content="${esc(description)}" />`,
   );
   html = html.replace(
-    /<meta property="og:title"[^>]*>/,
-    `<meta property="og:title" content="${esc(title)}" />`,
+    /<meta data-rh="true" property="og:title"[^>]*>/,
+    `<meta data-rh="true" property="og:title" content="${esc(title)}" />`,
   );
   html = html.replace(
-    /<meta property="og:description"[^>]*>/,
-    `<meta property="og:description" content="${esc(description)}" />`,
+    /<meta data-rh="true" property="og:description"[^>]*>/,
+    `<meta data-rh="true" property="og:description" content="${esc(description)}" />`,
   );
   html = html.replace(
-    /<meta property="og:url"[^>]*>/,
-    `<meta property="og:url" content="${esc(canonical)}" />`,
+    /<meta data-rh="true" property="og:url"[^>]*>/,
+    `<meta data-rh="true" property="og:url" content="${esc(canonical)}" />`,
+  );
+  html = html.replace(
+    /<meta data-rh="true" name="twitter:title"[^>]*>/,
+    `<meta data-rh="true" name="twitter:title" content="${esc(title)}" />`,
+  );
+  html = html.replace(
+    /<meta data-rh="true" name="twitter:description"[^>]*>/,
+    `<meta data-rh="true" name="twitter:description" content="${esc(description)}" />`,
   );
 
   // index.html non dichiara più un canonical statico (creava un secondo tag in
   // conflitto con quello di Helmet): qui lo iniettiamo, uno solo, già corretto.
   const head = [
-    `<link rel="canonical" href="${esc(canonical)}" />`,
-    ...jsonLd.map((b) => `<script type="application/ld+json">${JSON.stringify(b)}</script>`),
+    `<link data-rh="true" rel="canonical" href="${esc(canonical)}" />`,
+    ...jsonLd.map(
+      (b) => `<script data-rh="true" type="application/ld+json">${JSON.stringify(b)}</script>`,
+    ),
   ].join("\n    ");
   html = html.replace("</head>", `  ${head}\n  </head>`);
 
