@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Seo, { SITE_URL, SITE_NAME } from "@/components/Seo";
 import { Skeleton } from "@/components/ui/skeleton";
 import { CheckCircle, XCircle, MapPin } from "lucide-react";
+import SiteFooter from "@/components/SiteFooter";
 
 interface CityListItem {
   id: string;
@@ -195,6 +196,7 @@ const CitiesIndex = () => {
           </Link>
         </div>
       </main>
+      <SiteFooter />
     </div>
   );
 };

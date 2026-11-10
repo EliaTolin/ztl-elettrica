@@ -10,6 +10,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Seo, { SITE_URL, SITE_NAME } from "@/components/Seo";
 import ZtlExplainer from "@/components/ZtlExplainer";
+import SiteFooter from "@/components/SiteFooter";
 
 const CityPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -505,6 +506,7 @@ const CityPage = () => {
             </div>
           </section>
         </main>
+        <SiteFooter />
       </div>
     </>
   );

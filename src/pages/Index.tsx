@@ -7,6 +7,7 @@ import CityCard from '../components/CityCard';
 import FilterBar from '../components/FilterBar';
 import Header from '../components/Header';
 import { supabase } from '../lib/supabase';
+import SiteFooter from "@/components/SiteFooter";
 
 interface MapBounds {
   minLng: number;
@@ -235,11 +236,7 @@ const Index = () => {
         )}
       </main>
       
-      <footer className="bg-white border-t py-4 animate-fade-in">
-        <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>© 2025 ZTL Elettrica Italia - Le informazioni fornite potrebbero variare, consulta sempre i siti ufficiali dei comuni.</p>
-        </div>
-      </footer>
+      <SiteFooter className="animate-fade-in" />
       {renderDebugInfo()}
     </div>
   );

@@ -5,6 +5,7 @@ import { Mail, MessageCircle, Map, Github, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import TelegramIcon from '@/components/icons/TelegramIcon';
 import Seo, { SITE_URL } from '@/components/Seo';
+import SiteFooter from "@/components/SiteFooter";
 const Contacts = () => {
   return (
     <div className="min-h-screen flex flex-col">
@@ -116,6 +117,7 @@ const Contacts = () => {
           </Card>
         </div>
       </main>
+      <SiteFooter />
     </div>
   );
 };

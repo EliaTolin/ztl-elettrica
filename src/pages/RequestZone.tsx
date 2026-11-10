@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../components/Header';
 import AddZoneForm from '../components/AddZoneForm';
 import Seo, { SITE_URL } from '@/components/Seo';
+import SiteFooter from "@/components/SiteFooter";
 
 const RequestZone = () => {
   return (
@@ -46,11 +47,7 @@ const RequestZone = () => {
         </div>
       </main>
       
-      <footer className="bg-white border-t py-4 mt-8">
-        <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>© 2025 ZTL Elettrica Italia - Le informazioni fornite potrebbero variare, consulta sempre i siti ufficiali dei comuni.</p>
-        </div>
-      </footer>
+      <SiteFooter className="mt-8" />
     </div>
   );
 };

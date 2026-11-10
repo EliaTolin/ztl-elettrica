@@ -29,6 +29,8 @@ import { fileURLToPath } from "node:url";
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = resolve(ROOT, "dist");
 const SITE_URL = "https://ztlelettrica.it";
+const CREDIT_URL =
+  "https://eliatolin.com/?utm_source=ztlelettrica.it&utm_medium=referral&utm_content=footer";
 const SITE_NAME = "ZTL Elettrica Italia";
 
 const SUPABASE_URL = process.env.VITE_SUPABASE_URL;
@@ -286,7 +288,9 @@ function render(template, { title, description, canonical, jsonLd, body }) {
   ].join("\n    ");
   html = html.replace("</head>", `  ${head}\n  </head>`);
 
-  html = html.replace('<div id="root"></div>', `<div id="root">${body}</div>`);
+  // Stesso footer di SiteFooter.tsx, così il credito c'è anche per i crawler senza JS.
+  const footer = `<footer><p>Made by <a href="${CREDIT_URL}" target="_blank" rel="noopener">Elia Tolin</a></p></footer>`;
+  html = html.replace('<div id="root"></div>', `<div id="root">${body}${footer}</div>`);
 
   return html;
 }

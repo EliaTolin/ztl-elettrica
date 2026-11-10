@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import Seo, { SITE_URL, SITE_NAME } from "@/components/Seo";
 import { Skeleton } from "@/components/ui/skeleton";
 import { CheckCircle, XCircle } from "lucide-react";
+import SiteFooter from "@/components/SiteFooter";
 
 interface Props {
   slug: string;
@@ -229,6 +230,7 @@ const GuidePage = ({ slug }: Props) => {
           </p>
         </section>
       </main>
+      <SiteFooter />
     </div>
   );
 };
